@@ -1,0 +1,12 @@
+operation,file_path_changed,class_identity_changed,method_identity_changed,signature_changed,local_structure_changed,baseline_feature_directly_affected,expected_history_disruption,rationale,evidence_source
+Rename Class,YES,YES,NO,NO,NO,DIRECT,YES,"Alters the file path and class name, severing the primary baseline file-identity link.","Conceptual alignment with file-level PTS baseline"
+Move Class,YES,YES,NO,NO,NO,DIRECT,YES,"Relocates the class to a new path/package, severing file-identity link.","Conceptual alignment with file-level PTS baseline"
+Extract Class,YES,YES,YES,NO,NO,DIRECT,YES,"Creates a new file/class lacking any failure history in the baseline matrix.","Conceptual alignment with file-level PTS baseline"
+Rename Method,NO,NO,YES,YES,NO,INDIRECT,NO,"File identity is preserved. Tabular file-level PTS does not track method symbols, but registers the rename as line churn.","Conceptual alignment with file-level PTS baseline"
+Move Method,CONDITIONAL,NO,YES,NO,NO,CONDITIONAL,CONDITIONAL,"Directly severs file identity ONLY if moved across files. If moved within the same file, it is merely indirect churn.","Conceptual alignment with file-level PTS baseline"
+Change Parameter Type,NO,NO,NO,YES,NO,INDIRECT,NO,"File identity intact. Registers as code churn in the baseline.","Conceptual alignment with file-level PTS baseline"
+Change Return Type,NO,NO,NO,YES,NO,INDIRECT,NO,"File identity intact. Registers as code churn in the baseline.","Conceptual alignment with file-level PTS baseline"
+Extract Method,NO,NO,YES,YES,YES,INDIRECT,NO,"File identity intact. The structural change registers as added/deleted lines (churn).","Conceptual alignment with file-level PTS baseline"
+Extract Variable,NO,NO,NO,NO,YES,INDIRECT,NO,"File identity intact. Registers strictly as code churn.","Conceptual alignment with file-level PTS baseline"
+Rename Variable,NO,NO,NO,NO,YES,INDIRECT,NO,"File identity intact. Registers strictly as code churn.","Conceptual alignment with file-level PTS baseline"
+Change Access Modifier,NO,NO,NO,NO,YES,INDIRECT,NO,"File identity intact. Registers strictly as code churn.","Conceptual alignment with file-level PTS baseline"

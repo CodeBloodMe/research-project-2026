@@ -5,24 +5,15 @@ Machine-learning-based Predictive Test Selection (PTS) models often rely on hist
 
 ## 2. Research Questions (RQ1–RQ4)
 * **RQ1:** Do REF_MIXED commits exhibit different test-level missed-failure behavior in the specified history-based ML-PTS formulation than comparable NON_REF commits?
-* **RQ2:** Which classes of structural refactoring (file/path, method/symbol, signature, local/token) are associated with differences in missed-failure behavior and/or PTS feature distribution?
-* **RQ3:** To what extent does preserving historical code identity through structural mapping attenuate any observed performance difference?
+* **RQ2:** Are refactorings that alter representations directly used by the history-based PTS baseline associated with greater feature distribution shift and missed-failure behavior than refactorings without direct representation changes?
+* **RQ3:** To what extent does preserving the affected historical representation through structural mapping attenuate the observed missed-failure behavior for refactoring commits?
 * **RQ4:** (Optional) Do AST/dependency structural features improve robustness on refactoring commits?
 
 ## 3. Conceptual Model
-```mermaid
-flowchart TD
-    A[Structural Refactoring] -->|Alters File Paths/Identities| B[Feature Distribution Shift]
-    B -->|Loss of Historical Code-Test Correlation| C[Prediction Change in ML-PTS]
-    C -->|Underestimation of Failure Probability| D[Test-Level Missed Failures]
-```
+The study employs a conditional mechanism model defining how refactoring affects PTS exposure. Please refer to `e11_mechanism_model.md` for the explicit causal chain differentiating direct historical representation discontinuity from indirect code churn.
 
 ## 4. Refactoring Taxonomy
-Based strictly on the detectable operations of the RefactoringMiner 2.0 tool:
-1. **Rename Operations**: Rename Class, Rename Method, Rename Variable/Parameter.
-2. **Relocation Operations**: Move Method, Move Class, Move Attribute (across files).
-3. **Extraction/Inlining Operations**: Extract Method, Inline Method, Extract Class, Inline Class.
-4. **Type Changes**: Change Variable Type, Change Return Type, Change Parameter Type.
+Refactoring operations are strictly classified by their direct vs. indirect exposure to the defined tabular history-based PTS baseline. Semantic embeddings (e.g., TF-IDF, CodeBERT) are explicitly excluded from this baseline. See `e11_baseline_representation_spec.md` and `e11_refactoring_pts_exposure_matrix.csv` for the precise classifications.
 
 ## 5. Population Definition
 The population comprises history-based tabular ML-PTS models using the specified feature family, evaluated on the Continuous Integration (CI) build histories of mature, open-source Java repositories.
@@ -70,8 +61,8 @@ The primary treatment groups are:
 * **NON_REF**: no approved refactoring detected + production-code change
 
 * **Baseline PTS on REF_MIXED Commits** vs. **Baseline PTS on NON_REF Commits** (Tests RQ1).
-* **Baseline PTS on Identity-Altering Refactorings** vs. **Baseline PTS on Identity-Preserving Refactorings** (Tests RQ2).
-* **Baseline PTS** vs. **Identity-Aware PTS** (incorporating historical file identity mapping, moved-code mapping, or structural indicators) on Refactoring-Containing Commits (Tests RQ3).
+* **Baseline PTS on Directly Exposed Refactorings** vs. **Baseline PTS on Indirectly Exposed Refactorings** (Tests RQ2).
+* **Baseline PTS** vs. **Identity-Aware PTS** (incorporating historical file/path mapping interventions) on Refactoring-Containing Commits (Tests RQ3).
 
 ## 13. Statistical Analysis Plan
 The exact statistical tests will not be finalized until a dataset census has established failure prevalence, refactoring commit counts, repeated-test structure, and class imbalance. However, the analysis will account for the data hierarchy (test $\rightarrow$ commit $\rightarrow$ repository) using appropriate clustering or mixed-effects models (e.g., repository random effects). 

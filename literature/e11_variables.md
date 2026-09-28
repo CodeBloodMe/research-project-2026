@@ -17,12 +17,11 @@
 * **Historical Failure Relationships**: The failure rate of the test in recent history, and historical code-test co-occurrence.
 * **Identity-Aware Information** *(For RQ3 Intervention)*: Historical file identity mapping, moved-code mapping, rename mapping, or structural refactoring indicators.
 
-## 3. RQ2 Analytical Variables (Multi-Label Representation)
-Because a single commit may contain multiple refactoring operations acting on different semantic levels, the structural alteration is represented via non-mutually exclusive binary indicators:
-* `identity_file_change = 0/1`: Operations affecting file/path identity (e.g., Rename Class, Move Class).
-* `identity_method_change = 0/1`: Operations affecting symbol/method identity but preserving the file (e.g., Rename Method, Move Method within same package/class).
-* `identity_signature_change = 0/1`: Operations altering method signatures (e.g., Change Parameter Type).
-* `local_structural_change = 0/1`: Operations affecting local AST tokens (e.g., Extract Variable, Rename Variable).
+## 3. RQ2 Analytical Variables (Exposure Representation)
+Because a single commit may contain multiple refactoring operations, its structural alteration is represented via non-mutually exclusive binary indicators denoting the *exposure* to the PTS baseline:
+* `exposure_direct = 0/1`: Operations that directly disrupt a representation indexed by the baseline (e.g., File/Path renaming, Class moving).
+* `exposure_indirect = 0/1`: Operations that preserve the baseline-indexed identity but introduce secondary feature changes such as code churn (e.g., Local Variable Extraction).
+*(Note: A commit may contain both).*
 
 ## 4. Outcomes
 ### Primary Outcome
