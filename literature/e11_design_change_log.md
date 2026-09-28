@@ -1,5 +1,8 @@
 # Phase 13D: E11 Design Change Log
 
+> **STATUS: HISTORICAL**
+> *This document represents past design iterations. It may contain causal language or baseline specifications that have since been superseded by the `E11_FINAL_RESEARCH_DESIGN.md`.*
+
 ## 1. RQ1 Alignment
 * **Previous State**: RQ1 broadly compared "refactoring-containing commits" to "non-refactoring commits," silently merging `REF_ONLY` (pure refactorings) into the primary treatment.
 * **New State**: RQ1 now explicitly contrasts `REF_MIXED` against `NON_REF`. `REF_ONLY` is defined as a separately reported descriptive subgroup to prevent theoretical ambiguity.

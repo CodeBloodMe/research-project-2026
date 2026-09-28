@@ -9,7 +9,7 @@ flowchart TD
     A[Structural Refactoring Operation] --> B{Does it alter an identifier directly indexed by the PTS baseline?}
     
     B -->|YES (e.g., File/Class Rename)| C[Historical Representation Discontinuity]
-    C --> D[Massive Feature Distribution Shift (History Drops to 0)]
+    C --> D[Massive Feature Distribution Shift (Disrupted Historical Linkages)]
     
     B -->|NO (e.g., Local Variable Extract)| E[Primarily Code Churn / Secondary Feature Change]
     E --> F[Minor/Indirect Feature Distribution Shift]

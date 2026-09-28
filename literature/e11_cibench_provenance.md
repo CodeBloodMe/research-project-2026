@@ -2,9 +2,9 @@
 
 ## 1. Official Source Identity
 The definitive source of historical Continuous Integration data for E11 is:
-* **Authors**: Jin, W. and Servant, F.
+* **Authors**: Xianhao Jin and Francisco Servant
 * **Dataset**: CIBench
-* **Publication**: "The Hidden Costs of Continuous Integration: A Study of the Impact of CI on Software Development Practices" (ICSE 2021) / Zenodo
+* **Publication**: "CIBench: A Dataset and Collection of Techniques for Build and Test Selection and Prioritization in Continuous Integration" (ICSE 2021)
 * **DOI/Archive**: `10.5281/zenodo.4682056`
 
 ## 2. Published Dataset Statistics
@@ -13,7 +13,9 @@ The following factual statistics are drawn strictly from the published documenta
 * 82,427 CI builds
 * 13,464 failing builds
 
-*Note: These numbers describe the CIBench population before E11-specific filtering (e.g., refactoring content, Java-only, time windows).*
+*Note: These numbers describe the CIBench population before E11-specific filtering. They are published dataset statistics, not local measurements.*
 
 ## 3. Local Accessibility and Schema Verification
-Direct local acquisition of the raw `data_set.tar.gz` archive is currently blocked by Zenodo API/UUID throttling policies. Schema properties have been verified exclusively from the published dataset descriptions and the project's open-source metadata. No claim of independent inspection of the raw SQLite tables is made until the archive is successfully downloaded and parsed in future phases.
+Direct local acquisition of the raw `data_set.tar.gz` archive is currently blocked by Zenodo API/UUID throttling policies. Schema properties have been verified exclusively from the published dataset descriptions and the project's open-source metadata. No independent inspection of the raw SQLite tables is claimed until the archive is successfully downloaded and parsed in future phases.
+
+

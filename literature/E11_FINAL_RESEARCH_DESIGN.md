@@ -4,7 +4,7 @@
 Machine-learning-based Predictive Test Selection (ML-PTS) systems utilize historical code-test correlation data to probabilistically drop tests. Structural code refactorings alter the identities (e.g., file paths, method signatures) that these models use to index history, potentially causing silent degradation in prediction accuracy.
 
 ## 2. Motivation
-If refactoring code systematically blinds the CI pipeline's test selection model, developers are disincentivized from maintaining code hygiene, as structural improvements will inadvertently allow regressions to escape into production.
+Structural evolution may alter the historical representations used by a history-based PTS model, potentially affecting failure-test selection accuracy on subsequent commits.
 
 ## 3. Precise Gap
 While traditional Regression Test Selection (RTS) has been evaluated for refactoring robustness, the specific failure mode where *history-based ML tabular features* lose their index linkages due to identity-altering refactorings remains underexplored.
@@ -38,8 +38,8 @@ File/Path Identity, Code Churn, Historical Test Failure Rate, Historical Code-Te
 The actual pass/fail test outcomes generated during the CIBench recorded CI build.
 
 ## 13. Outcomes
-* **Primary**: `FailureMissRate` (proportion of actual failing tests missed by the model).
-* **Secondary**: `Build-level Regression Escape`, `SelectionRate`, `TestTimeSaved`.
+* **Primary**: `FailureMissRate` (proportion of actual failing tests missed by the model, evaluated strictly among test instances where actual failure $y(d,t) = 1$).
+* **Secondary**: `SelectionRate`, `TestTimeSaved`, and `Build-level Regression Escape` (aggregated at the commit level).
 
 ## 14. RQs
 * **RQ1**: Do REF_MIXED commits exhibit different test-level missed-failure behavior in the specified history-based ML-PTS formulation than comparable NON_REF commits?
@@ -53,7 +53,7 @@ The actual pass/fail test outcomes generated during the CIBench recorded CI buil
 * **H3**: Preserving disrupted historical representations reduces the elevated missed-failure behavior.
 
 ## 16. Estimands
-Average Treatment Effects (ATE) evaluated via hierarchical mixed-effects regression models on test executions clustered within commits and repositories.
+Adjusted associational differences (e.g., Risk Difference or Adjusted Odds Ratio) evaluated via hierarchical mixed-effects logistic regression models on observable failing test executions clustered within commits and repositories. This is a hierarchical observational comparison, not a causal Average Treatment Effect (ATE).
 
 ## 17. Confounders
 Commit Size (churn), Temporal Window (project age), and Repository Culture. Controlled via mixed-effects modeling and a sensitivity PSM analysis.
@@ -65,16 +65,16 @@ Strict boundaries: No information generated during or after commit $d$ may enter
 Repeated builds use the outcome of the first run. Any tests known to be flaky in CIBench documentation are excluded from the candidate universe to minimize noise.
 
 ## 20. Calibration/Selection Policy
-Test selection operates via a global or repository-specific probability threshold calibrated strictly on training/validation data to achieve a target historical recall (e.g., 95%).
+Test selection operates via a fixed time-reduction budget or target historical recall selected exclusively on the validation set. The chosen rule is frozen globally prior to evaluation.
 
 ## 21. Statistical Model
-Hierarchical Mixed-Effects Logistic Regression predicting Failure Misses. 
+Hierarchical Mixed-Effects Logistic Regression predicting test misses among failing tests.
 
 ## 22. RQ3 Intervention
 Intercepting file renames/moves at prediction time to query the historical failure matrix using the old file path, injecting that history into the new file path's feature vector.
 
 ## 23. RQ4 Status
-EXPLORATORY ANALYSIS. (Not required for the core causal claim, but useful context).
+EXPLORATORY ANALYSIS. (Secondary to the main historical degradation claim).
 
 ## 24. Threats to Validity
 Construct validity (RefactoringMiner accuracy, AST diff mapping), External validity (Java/CIBench bias), Internal validity (unobserved confounders like developer skill).
