@@ -2,9 +2,9 @@
 
 ## 1. Precise Definitions
 * **commit**: A Git revision representing a single logical change recorded in the repository history.
-* **candidate pure-refactoring commit**: A commit where RefactoringMiner detects structural operations, NO non-refactoring production-code changes are detected, the commit successfully compiles, and it passes predefined filtering criteria. *(Note: A stratified sample of these must be manually validated to estimate labeling reliability).*
-* **feature commit**: A commit with structural/functional changes (e.g., source code addition/deletion) where zero refactoring operations are detected.
-* **mixed commit**: A commit containing both RefactoringMiner-detected refactoring operations and other feature/functional modifications.
+* **REF_ONLY (pure-refactoring commit)**: A commit where RefactoringMiner detects structural operations, and NO non-refactoring production-code changes are detected.
+* **NON_REF (non-refactoring commit)**: A commit with production-code changes where zero refactoring operations are detected by RefactoringMiner.
+* **REF_MIXED (mixed commit)**: A commit containing both RefactoringMiner-detected refactoring operations and other feature/functional modifications. This is the primary treatment group.
 * **selected test**: A test case predicted to have a failure probability above the defined execution threshold by the PTS model, thus scheduled for execution.
 * **omitted test**: A test case predicted by the PTS model as likely to pass (below the execution threshold), and thus skipped during the CI run.
 * **actual failing test**: A test case that fails during the ground-truth deterministic execution of the full test suite for a given commit.

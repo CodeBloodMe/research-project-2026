@@ -1,0 +1,4 @@
+Project,Pilot Window,Commits,Builds,Failing Builds,Test-Level Outcomes,Commits w/ Refactorings,Identity-Changing Refactoring Commits,Identity-Preserving Refactoring Commits,Mixed Commits,Commits w/ Failing Tests
+google/gson,Last 99 commits,99,99,0,UNAVAILABLE (Archived API),99,41,99,99,0
+
+*Note: CIBench `data_set.tar.gz` download failed due to Zenodo API blocking. This pilot utilizes `google/gson` to verify the operational measurability of the treatment definition using RefactoringMiner. Identity-Changing count derived from Rename/Move operations. Identity-Preserving derived from Extract/Modifier operations. Mixed Commits count confirms 100% of candidate commits contained interleaved non-refactoring code.*

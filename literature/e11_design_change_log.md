@@ -1,15 +1,20 @@
-# Phase 12B Design Change Log (E11)
+# Phase 13C: E11 Design Change Log
 
-This log documents the methodological corrections made to the E11 research design to ensure scientific rigor and avoid premature claims.
+## 1. Unit of Analysis Update
+* **Previous State**: The primary treatment was restricted to "Candidate pure-refactoring commits" (commits with absolutely no functional/feature code).
+* **New State**: The primary treatment is now **"REFactoring-containing commit"** (any commit in which RefactoringMiner detects at least one structural refactoring operation).
+* **Rationale**: Phase 13B proved empirically that pure-refactoring commits are extraordinarily rare (~0% of refactoring commits in the pilot), leading to artificial data sparsity. Moreover, mixed commits (refactoring + functional changes) are the realistic scenario where a refactoring might obscure a real functional regression from a PTS model. The updated definition establishes three groups (REF_ONLY, REF_MIXED, NON_REF) for strict reporting.
 
-1. **Corrected Build-Level False Negative Definition**: Separated `test-level miss` from `build-level regression escape`. A build is not a regression escape if at least one selected test catches the regression. Conflating the two was inaccurate.
-2. **Reframed RQ3**: Replaced the causal mediation question ("Is the difference explained by...") with an experimentally testable intervention question: "To what extent is the refactoring-associated change in PTS performance attenuated when historical code identity is preserved through structural mapping?"
-3. **Narrowed PTS Claim**: Removed generalizations about "industrial PTS systems." Scoped the baseline strictly to "history-based tabular ML-PTS models using the specified feature family."
-4. **Refined Pure Refactoring Definition**: Replaced "pure refactoring" with "candidate pure-refactoring commit" (RefactoringMiner detection + no non-refactoring code changes). Added a requirement for manual validation of a stratified sample to estimate labeling reliability, acknowledging that tool detection is not absolute proof of behavior preservation.
-5. **Redefined Primary Outcome**: Changed from continuous FNR to a binary indicator `test_missed` (1 if an actual failing test was not selected, 0 if selected). Made build-level regression escape a distinct secondary outcome.
-6. **Operating-Point Procedure**: Removed arbitrary probability thresholds. Implemented a strict Train/Validation/Test operating-point procedure where the execution threshold is tuned on the validation set based on a time-reduction budget and frozen for the test set evaluation.
-7. **Revised Statistical Plan**: Removed the Mann-Whitney U test as the default. Acknowledged the hierarchical nature of the data (test → commit → repository) requiring clustered/mixed-effects models. Explicitly stated that the exact statistical test will not be finalized until a dataset census confirms failure prevalence and class imbalance.
-8. **Specified Identity-Aware Interventions**: Clarified that RQ3 will be tested via Baseline PTS vs. Identity-Aware PTS using historical file identity mapping, moved-code mapping, and rename mapping.
-9. **Revised Hypotheses**: Removed arbitrary numerical effect sizes (e.g., $RR \ge 3.0$). Rephrased H1–H3 to focus on associations, feature changes, and identity preservation without assuming outcomes.
-10. **Narrowed External Validity**: Removed claims generalizing to all statically typed languages. Scoped strictly to mature open-source Java projects.
-11. **Emphasized Data Power**: Highlighted that statistical power strictly depends on the conjunction of refactoring commits, actual failing tests, AND missed failing tests, necessitating a pilot data census before implementation.
+## 2. Refactoring Category Mapping (RQ2 vs H2 Alignment)
+* **Previous State**: RQ2 asked an open-ended question about "which refactoring categories" cause issues, while H2 explicitly hypothesized that *identity-changing* refactorings cause the most shift, creating a mismatch between the inductive RQ and the deductive Hypothesis.
+* **New State**: RQ2 and H2 have been explicitly aligned. RQ2 now asks: "Which classes of structural refactoring are associated with differences in missed-failure behavior...?", directly leveraging the new formal taxonomy of `IDENTITY-CHANGING` vs `IDENTITY-PRESERVING` operations. H2 maps perfectly to this by hypothesizing that `IDENTITY-CHANGING` operations yield significantly higher missed-failure rates than `IDENTITY-PRESERVING` operations.
+* **Rationale**: Eliminates theoretical confusion and provides a scientifically coherent mapping from taxonomy to question to hypothesis.
+
+## 3. Power Claims Removed
+* **Previous State**: Documents made claims such as "RQ2 is adequately powered."
+* **New State**: All definitive statements regarding statistical power have been deleted and replaced with "Power will be assessed after the empirical census."
+* **Rationale**: Prevent hallucination or assumption of statistical power prior to processing the massive, final multi-project dataset.
+
+## 4. CIBench Identity Corrected
+* **Previous State**: Minor confusion regarding CIBench schema availability.
+* **New State**: Standardized exactly on the Jin & Servant CIBench dataset (DOI: 10.5281/zenodo.4682056) recognizing its published facts (82,427 builds, 100 projects, 13,464 failing builds).

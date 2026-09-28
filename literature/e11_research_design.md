@@ -3,10 +3,11 @@
 ## 1. Final Research Problem
 Machine-learning-based Predictive Test Selection (PTS) models often rely on historical file-path change frequencies and code-test co-occurrence matrices. When structural refactorings (such as class renames, method moves, or cross-module relocations) occur, these historical file identities are altered or destroyed. It is unknown to what extent this identity loss induces a feature distribution shift that limits the model's ability to capture historical failure correlations, and whether this shift increases the probability of silently skipping necessary tests (missed regressions).
 
-## 2. Research Questions (RQ1–RQ3)
-* **RQ1:** Do structural refactoring commits exhibit different test-level missed-failure behavior in history-based ML-PTS models compared to standard feature commits?
-* **RQ2:** Which specific categories of structural refactoring (e.g., class renames, method moves, cross-module extractions) are most strongly associated with differences in PTS false negatives?
-* **RQ3:** To what extent is the refactoring-associated change in PTS performance attenuated when historical code identity is preserved through structural mapping?
+## 2. Research Questions (RQ1–RQ4)
+* **RQ1:** Do refactoring-containing commits exhibit different test-level missed-failure behavior in the specified history-based ML-PTS formulation than comparable non-refactoring commits?
+* **RQ2:** Which classes of structural refactoring (identity-changing vs. identity-preserving) are associated with differences in missed-failure behavior and/or PTS feature distribution?
+* **RQ3:** To what extent does preserving historical code identity through structural mapping attenuate any observed performance difference?
+* **RQ4:** (Optional) Do AST/dependency structural features improve robustness on refactoring commits?
 
 ## 3. Conceptual Model
 ```mermaid
@@ -48,7 +49,8 @@ The population comprises history-based tabular ML-PTS models using the specified
 * **merge commits**: Excluded. Their diffs and test failures conflate changes from multiple branches.
 * **infrastructure failures**: Builds failing due to Maven/Gradle timeout, OOM, or external service unavailability are excluded.
 * **test-only commits**: Excluded from the feature vs. refactoring comparison, as they do not modify production code ASTs.
-* **mixed commits**: Processed and evaluated separately from candidate pure-refactoring commits to prevent confounding.
+* **mixed commits (REF_MIXED)**: Analyzed as the primary unit of analysis because they represent the realistic intersection of structural shifts and test-failing feature changes.
+* **pure refactoring commits (REF_ONLY)**: Tracked and reported separately as a subgroup if data permit.
 * **reverted commits**: Kept in strictly chronological order. They represent real developer workflows and CI events.
 * **duplicated builds**: For a single commit hash, only the first chronologically completed build is included.
 
@@ -62,15 +64,20 @@ Arbitrary probability thresholds will not be used. The threshold will be set via
 * **TEST**: Freeze the threshold and evaluate once. No threshold tuning is permitted on the test set.
 
 ## 12. Experimental Comparisons
-* **Baseline PTS on Feature Commits** vs. **Baseline PTS on Candidate Pure-Refactoring Commits** (Tests RQ1).
-* **Baseline PTS on specific Refactoring Categories** (Tests RQ2).
-* **Baseline PTS** vs. **Identity-Aware PTS** (incorporating historical file identity mapping, moved-code mapping, or structural indicators) on Refactoring Commits (Tests RQ3).
+The primary treatment groups are:
+* **REF_ONLY**: refactoring detected + no non-refactoring production change detected
+* **REF_MIXED**: refactoring detected + non-refactoring production changes
+* **NON_REF**: no approved refactoring detected + production-code change
+
+* **Baseline PTS on REF_MIXED Commits** vs. **Baseline PTS on NON_REF Commits** (Tests RQ1).
+* **Baseline PTS on Identity-Changing Refactorings** vs. **Baseline PTS on Identity-Preserving Refactorings** (Tests RQ2).
+* **Baseline PTS** vs. **Identity-Aware PTS** (incorporating historical file identity mapping, moved-code mapping, or structural indicators) on Refactoring-Containing Commits (Tests RQ3).
 
 ## 13. Statistical Analysis Plan
 The exact statistical tests will not be finalized until a dataset census has established failure prevalence, refactoring commit counts, repeated-test structure, and class imbalance. However, the analysis will account for the data hierarchy (test $\rightarrow$ commit $\rightarrow$ repository) using appropriate clustering or mixed-effects models (e.g., repository random effects). 
 
 ## 14. Data Power & Census Requirement
-Statistical power strictly depends on the conjunction of three factors: the number of pure refactoring commits, the number of actual failing tests, AND the number of missed failing tests. A dataset census must be conducted prior to the full study to guarantee sufficient sample sizes in these overlapping strata.
+Power will be assessed after the full empirical data extraction. Statistical power strictly depends on the conjunction of factors across the massive final dataset. A dataset census must be completed prior to the full study to guarantee sufficient sample sizes in these overlapping strata. No power claims are made prior to this extraction.
 
 ## 15. Falsification Criteria
 The central hypothesis is falsified if the test-level miss behavior for refactoring commits is statistically indistinguishable from, or lower than, that of feature commits, or if the distribution shift is negligible.
