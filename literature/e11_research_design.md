@@ -4,8 +4,8 @@
 Machine-learning-based Predictive Test Selection (PTS) models often rely on historical file-path change frequencies and code-test co-occurrence matrices. When structural refactorings (such as class renames, method moves, or cross-module relocations) occur, these historical file identities are altered or destroyed. It is unknown to what extent this identity loss induces a feature distribution shift that limits the model's ability to capture historical failure correlations, and whether this shift increases the probability of silently skipping necessary tests (missed regressions).
 
 ## 2. Research Questions (RQ1–RQ4)
-* **RQ1:** Do refactoring-containing commits exhibit different test-level missed-failure behavior in the specified history-based ML-PTS formulation than comparable non-refactoring commits?
-* **RQ2:** Which classes of structural refactoring (identity-changing vs. identity-preserving) are associated with differences in missed-failure behavior and/or PTS feature distribution?
+* **RQ1:** Do REF_MIXED commits exhibit different test-level missed-failure behavior in the specified history-based ML-PTS formulation than comparable NON_REF commits?
+* **RQ2:** Which classes of structural refactoring (file/path, method/symbol, signature, local/token) are associated with differences in missed-failure behavior and/or PTS feature distribution?
 * **RQ3:** To what extent does preserving historical code identity through structural mapping attenuate any observed performance difference?
 * **RQ4:** (Optional) Do AST/dependency structural features improve robustness on refactoring commits?
 
@@ -70,7 +70,7 @@ The primary treatment groups are:
 * **NON_REF**: no approved refactoring detected + production-code change
 
 * **Baseline PTS on REF_MIXED Commits** vs. **Baseline PTS on NON_REF Commits** (Tests RQ1).
-* **Baseline PTS on Identity-Changing Refactorings** vs. **Baseline PTS on Identity-Preserving Refactorings** (Tests RQ2).
+* **Baseline PTS on Identity-Altering Refactorings** vs. **Baseline PTS on Identity-Preserving Refactorings** (Tests RQ2).
 * **Baseline PTS** vs. **Identity-Aware PTS** (incorporating historical file identity mapping, moved-code mapping, or structural indicators) on Refactoring-Containing Commits (Tests RQ3).
 
 ## 13. Statistical Analysis Plan

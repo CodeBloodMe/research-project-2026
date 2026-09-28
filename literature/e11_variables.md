@@ -12,12 +12,19 @@
 * **build-level regression escape**: An instance where the actual regression is not exposed by *any* selected failing test, so the PTS-selected execution as a whole would not reveal the failure to the developer.
 
 ## 2. Feature Groups (ML Baseline & Identity-Aware)
-* **File Identity/Path**: Modified file names, file extensions, and directory paths.
+* **File Identity/Path**: Modified file names, file extensions, and directory paths (the primary representation mechanism for the tabular baseline).
 * **Code Churn**: Number of lines added, lines deleted, and total files changed in the commit.
 * **Historical Failure Relationships**: The failure rate of the test in recent history, and historical code-test co-occurrence.
 * **Identity-Aware Information** *(For RQ3 Intervention)*: Historical file identity mapping, moved-code mapping, rename mapping, or structural refactoring indicators.
 
-## 3. Outcomes
+## 3. RQ2 Analytical Variables (Multi-Label Representation)
+Because a single commit may contain multiple refactoring operations acting on different semantic levels, the structural alteration is represented via non-mutually exclusive binary indicators:
+* `identity_file_change = 0/1`: Operations affecting file/path identity (e.g., Rename Class, Move Class).
+* `identity_method_change = 0/1`: Operations affecting symbol/method identity but preserving the file (e.g., Rename Method, Move Method within same package/class).
+* `identity_signature_change = 0/1`: Operations altering method signatures (e.g., Change Parameter Type).
+* `local_structural_change = 0/1`: Operations affecting local AST tokens (e.g., Extract Variable, Rename Variable).
+
+## 4. Outcomes
 ### Primary Outcome
 * **Test Missed ($Y_{miss}$)**: A binary outcome defined at the test-execution level.
   * `test_missed = 1`: if an actual failing test was omitted by the PTS model.

@@ -1,4 +1,4 @@
-Project,Pilot Window,Commits,Builds,Failing Builds,Test-Level Outcomes,Commits w/ Refactorings,Identity-Changing Refactoring Commits,Identity-Preserving Refactoring Commits,Mixed Commits,Commits w/ Failing Tests
-google/gson,Last 99 commits,99,99,0,UNAVAILABLE (Archived API),99,41,99,99,0
+Project,Pilot Window,Commits,Builds,Failing Builds,Test-Level Outcomes,Commits w/ Refactorings,Refactoring-Containing; Mixed Status Unresolved,Commits w/ Failing Tests,Pilot Type
+google/gson,Last 99 commits,99,99,0,UNAVAILABLE (Archived API),99,99,0,single-project operational pilot
 
-*Note: CIBench `data_set.tar.gz` download failed due to Zenodo API blocking. This pilot utilizes `google/gson` to verify the operational measurability of the treatment definition using RefactoringMiner. Identity-Changing count derived from Rename/Move operations. Identity-Preserving derived from Extract/Modifier operations. Mixed Commits count confirms 100% of candidate commits contained interleaved non-refactoring code.*
+*Note: CIBench data download failed due to Zenodo API blocking. This single-project operational pilot utilizes `google/gson` strictly to verify the operational measurability of the treatment definition using RefactoringMiner. It is NOT evidence of population prevalence or statistical power. The "Mixed Status Unresolved" label indicates that while refactorings were present in 99 commits, the exact delta representing non-refactoring production changes was not computed for every commit during this preliminary extraction.*

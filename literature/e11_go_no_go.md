@@ -21,7 +21,7 @@ Under the new observational unit ("mixed refactoring + functional commits"), **R
 None, although RQ3 requires complex mapping logic to preserve identity.
 
 ### 7. Whether the approved design can proceed unchanged
-The core research question remains unchanged. However, the definition of the "treatment" in the design must be updated from "pure refactoring" to "commits containing at least one structural refactoring." 
+The core research question remains unchanged. However, the definition of the "treatment" in the design has been formalized explicitly. The primary treatment group is `REF_MIXED` (commits containing both structural refactorings and non-refactoring production changes), which is compared against the `NON_REF` baseline. `REF_ONLY` (pure refactorings) will be reported as a separate descriptive subgroup. 
 
 ### 8. Decision
 **CONDITIONAL GO**. 
