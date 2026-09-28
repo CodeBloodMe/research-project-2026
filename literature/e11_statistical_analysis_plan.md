@@ -1,10 +1,10 @@
 # Phase 14B: Statistical Analysis Plan (E11)
 
 ## RQ1: Miss-Rate Association
-* **Response**: $m(d,t)$ (binary, $1$ = test missed, $0$ = test selected), evaluated exclusively where actual failure $y(d,t) = 1$.
+* **Response**: $m(j,t)$ (binary, $1$ = test missed, $0$ = test selected), evaluated exclusively where actual test class failure on the CI build job $j$ is $y(j,t) = 1$.
 * **Exposure**: `REF_MIXED` vs `NON_REF` (binary).
 * **Covariates**: Log code churn, Number of files changed, Historical file activity.
-* **Grouping**: Random intercepts for `Repository` and `Commit`.
+* **Grouping**: Random intercepts for `Repository`, `Commit SHA`, and `CI Build Job` (nested explicitly as `Repository -> Commit SHA -> CI Build Job`).
 * **Effect Measure**: Adjusted Odds Ratio (aOR) or Risk Difference.
 * **CI**: 95% Confidence Interval computed via profile likelihood or bootstrap.
 * **Model Family**: Hierarchical Mixed-Effects Logistic Regression. (Mann-Whitney U is explicitly insufficient due to nested data).

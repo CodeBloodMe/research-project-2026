@@ -6,7 +6,7 @@ We conduct a hierarchical observational comparison. We do not claim `REF_MIXED` 
 ## 2. Primary Analysis Model
 The primary analysis is a **Hierarchical Mixed-Effects Logistic Regression**.
 
-* **Outcome**: Test-level miss ($m(d,t)$) modeled strictly among actual failing test instances ($y(d,t) = 1$).
+* **Outcome**: Test-level miss ($m(j,t)$) modeled strictly among actual failing test instances ($y(j,t) = 1$).
 * **Exposure**: `REF_MIXED` vs `NON_REF`.
 * **Fixed Covariates (Pre-specified)**: 
   - Log code churn (lines added + deleted)
@@ -14,7 +14,8 @@ The primary analysis is a **Hierarchical Mixed-Effects Logistic Regression**.
   - Historical file activity/age
 * **Random Effects / Clustering**:
   - Random intercept for `Repository` to account for heterogeneous test suites and project cultures.
-  - Random intercept for `Commit` to group test executions triggered by the same codebase state.
+  - Random intercept for `Commit SHA` to group test executions triggered by the same codebase state.
+  - Random intercept for `CI Build Job` to capture environment/flakiness variance across duplicate execution runs for the same SHA.
 
 * **Estimand Reporting**: We report an adjusted Odds Ratio (or Risk Difference derived via marginal standardization) representing the associational difference in miss probability, accompanied by confidence intervals and variance components for repository heterogeneity.
 

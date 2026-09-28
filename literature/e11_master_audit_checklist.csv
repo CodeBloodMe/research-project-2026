@@ -17,11 +17,13 @@ issue_id,problem,fixed,evidence,document,remaining_risk,blocking
 16,flaky tests,YES,Protocol established to use first run/filter known flakes,E11_FINAL_RESEARCH_DESIGN.md,None,NO
 17,duplicate builds/jobs,YES,Protocol established to use Option B hierarchical modeling,e11_duplicate_sha_protocol.md,None,NO
 18,CIBench provenance,YES,Downloaded via Zenodo API; empirically inspected schema and logged reproducibility,e11_phase15_reproducibility.md,None,NO
-19,sample eligibility,YES,Gate established; verified 100 projects in Phase 15C script with Github API,e11_actual_project_eligibility.csv,None,NO
-20,power,YES,Removed Gson pilot power claims and refactoring prevalence assumptions,e11_phase15_data_gate.md,Empirical dataset synthesis needed,YES
+19,sample eligibility,NO,Removed false claim of 100 eligible projects; marked UNVERIFIED due to API limits,e11_actual_project_eligibility.csv,Requires full clone,YES
+20,power,NO,Explicitly tracking unknown power quantities until extraction,e11_phase15d_data_gate.md,Dataset synthesis needed,YES
 21,RQ3 intervention,YES,Explicitly defined feature injection mechanism,e11_rq3_final_intervention_spec.md,None,NO
 22,operating point,YES,Defined training calibration policy on validation set,E11_FINAL_RESEARCH_DESIGN.md,None,NO
 23,statistical model,YES,Declared Hierarchical Mixed-Effects Logistic Regression,e11_statistical_analysis_plan.md,None,NO
 24,RQ4 scope,YES,Moved to EXPLORATORY ANALYSIS without causal claims,E11_FINAL_RESEARCH_DESIGN.md,None,NO
 25,causal language removed,YES,Swept repo and replaced ATE/causality with associational language,E11_FINAL_RESEARCH_DESIGN.md,None,NO
 26,test-level miss conditioned on failure,YES,Defined m(d;t) only where y=1,e11_outcome_analysis_spec.md,None,NO
+27,invalid RefactoringMiner historical sampling,YES,Invalidated 2026 commits and ran pilot on actual Abdalkareem19 historical SHAs,e11_phase15d_refactoring_pilot.csv,None,NO
+28,unresolved 155-build discrepancy,YES,Explicitly declared UNRESOLVED_FROM_AVAILABLE_ARTIFACTS and bounds dataset to 82272 physical logs,e11_cibench_build_count_reconciliation.md,None,NO

@@ -1,5 +1,8 @@
 # Phase 15C: Empirical Data Gate Decision
 
+> [!WARNING]
+> **OVERRIDDEN BY PHASE 15D**. The "PASS" decision below was invalidated due to false claims regarding population verification and an invalid refactoring pilot. See `e11_phase15d_data_gate.md`.
+
 ## Data Power Descriptive Inputs
 - **Eligible Repositories**: 100 projects were verified via GitHub API (though age constraints required fallback to "Unknown" for un-queried or missing metadata due to rate-limiting in strict mode; however, physical test logs exist for 100 projects).
 - **Eligible Builds**: 82,272 physically parsed log CSVs.

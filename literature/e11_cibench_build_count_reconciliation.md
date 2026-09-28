@@ -1,17 +1,20 @@
-# Phase 15C: CIBench Build Count Reconciliation
+# Phase 15D: CIBench Build Count Reconciliation
 
 ## The Discrepancy
-- **Published Count:** The CIBench paper (Jin & Servant) claims the dataset contains **82,427** CI builds with parsed test information.
-- **Physical Count:** Our empirical audit of the extracted `data_set.tar.gz` archive reveals exactly **82,272** CSV files in the `test_info_logs` directory.
-- **Difference:** 155 builds.
+- **Published Count (CIBench Paper / Meta-data)**: 82,427 builds.
+- **Physical Count (Extracted from test_info_logs)**: 82,272 builds.
+- **Delta**: 155 builds (0.18%).
 
-## Accounting for the Difference
-The total number of commits listed in the root `Abdalkareem19_git_result` index files is 118,928. Not all of these commits produced test logs (due to build failures, cancellations, or lack of test execution).
+## Reconciliation Table
 
-The 155 "missing" builds represent a 0.18% delta from the published number. This discrepancy is attributed to:
-1. **Empty Log Omission**: The dataset extraction pipeline likely discarded 155 builds that were initially flagged as "having test information" but upon final extraction yielded 0 parseable test rows.
-2. **Author Post-Processing**: The published 82,427 figure likely refers to the intermediate database state *before* final export into the Zenodo archive, where some malformed CSVs failed to serialize.
+| Category | Count | Evidence Source |
+| :--- | :--- | :--- |
+| CIBench published meta-population | 82,427 | Jin & Servant (2021) paper / summary |
+| Physically present test log CSVs | 82,272 | `test_info_logs/**/*.csv` |
+| Records with missing/empty test logs | 155 | Calculated Delta |
+| **Reason for Discrepancy** | **UNRESOLVED_FROM_AVAILABLE_ARTIFACTS** | The CIBench artifact does not contain an explicit error log for the 155 missing rows. |
 
-## Frozen Strategy
-We do not artificially inject or simulate 155 dummy builds to match the published count. 
-The true, physically observable candidate universe is definitively **82,272** test execution logs. The E11 protocol operates exclusively on this empirical reality.
+## Decision
+We cannot empirically prove *why* the 155 builds are missing (e.g., whether the CI job crashed before test execution, failed to produce an XML report, or the script failed to parse them). Therefore, we explicitly state this discrepancy is **UNRESOLVED_FROM_AVAILABLE_ARTIFACTS**.
+
+Our dataset size is strictly defined by the **82,272 physically observable** build records. We will not use the 82,427 count in our calculations.
