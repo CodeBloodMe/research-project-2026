@@ -9,3 +9,10 @@
 - `figures/`: Plots, graphs, and images
 - `reviews/`: Peer reviews and feedback
 - `tools/`: Utility scripts and tools
+
+## Integrations (MCPs)
+- MCP 1 → Zotero
+- MCP 2 → Semantic Scholar
+- MCP 3 → OpenAlex
+- MCP 4 → Crossref
+- MCP 5 → GitHub
