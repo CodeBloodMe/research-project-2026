@@ -1,0 +1,4 @@
+project,commit_sha,timestamp,analysis_status,refactoring_detected,refactoring_types,refactoring_count,non_refactoring_production_change,classification,REF_ONLY_or_REF_MIXED,direct_exposure,indirect_exposure,failed_label,changed_file_count
+okhttp,e18ae6b09171cc40f61ff9d70cf1ff3b6cb1c979,1786896492,SUCCESS,False,,0,TRUE,NON_REF,NON_REF,False,False,UNKNOWN_PILOT,1
+okhttp,5aab55d5ee3527e32dd60428d2c5ce856ec004d0,1788552727,SUCCESS,False,,0,TRUE,NON_REF,NON_REF,False,False,UNKNOWN_PILOT,1
+okhttp,28a88d9f7b7d65c059dafe0b368ac05b4ba10352,1789455200,SUCCESS,False,,0,TRUE,NON_REF,NON_REF,False,False,UNKNOWN_PILOT,1

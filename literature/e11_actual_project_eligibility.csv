@@ -1,101 +1,101 @@
-project,repository_URL,Java_status,approximate_project_age_evidence,commit_count_available,test-log/build_availability,unit-test_evidence_approx,failing_builds_in_sample,eligible_for_E11,exclusion_reason
-Achilles,https://github.com/unknown/Achilles,Java,Unknown (Requires full git clone),457,321,3318,2,True,Pass
-android-maven-plugin,https://github.com/unknown/android-maven-plugin,Java,Unknown (Requires full git clone),557,482,122,8,True,Pass
-aws-sdk-java,https://github.com/unknown/aws-sdk-java,Java,Unknown (Requires full git clone),267,227,1644,4,True,Pass
-blueflood,https://github.com/unknown/blueflood,Java,Unknown (Requires full git clone),1471,901,1148,3,True,Pass
-blueprints,https://github.com/unknown/blueprints,Java,Unknown (Requires full git clone),589,461,1221,5,True,Pass
-cat,https://github.com/unknown/cat,Java,Unknown (Requires full git clone),1235,779,4548,48,True,Pass
-checkstyle,https://github.com/unknown/checkstyle,Java,Unknown (Requires full git clone),1684,1406,10728,0,True,Pass
-cloudify,https://github.com/unknown/cloudify,Java,Unknown (Requires full git clone),7512,4810,72,0,True,Pass
-core,https://github.com/unknown/core,Java,Unknown (Requires full git clone),2708,441,506,4,True,Pass
-dagger,https://github.com/unknown/dagger,Java,Unknown (Requires full git clone),471,408,186,2,True,Pass
-DataflowJavaSDK,https://github.com/unknown/DataflowJavaSDK,Java,Unknown (Requires full git clone),1475,416,13777,4,True,Pass
-drill,https://github.com/unknown/drill,Java,Unknown (Requires full git clone),557,263,1588,4,True,Pass
-dropwizard,https://github.com/unknown/dropwizard,Java,Unknown (Requires full git clone),1754,1336,3672,1,True,Pass
-DSpace,https://github.com/unknown/DSpace,Java,Unknown (Requires full git clone),2195,1630,1353,2,True,Pass
-dynjs,https://github.com/unknown/dynjs,Java,Unknown (Requires full git clone),435,331,1664,2,True,Pass
-error-prone,https://github.com/unknown/error-prone,Java,Unknown (Requires full git clone),750,220,1382,1,True,Pass
-geoserver,https://github.com/unknown/geoserver,Java,Unknown (Requires full git clone),2564,2183,9042,12,True,Pass
-Glowstone,https://github.com/unknown/Glowstone,Java,Unknown (Requires full git clone),709,227,908,0,True,Pass
-go-lang-idea-plugin,https://github.com/unknown/go-lang-idea-plugin,Java,Unknown (Requires full git clone),1151,801,444,1,True,Pass
-goclipse,https://github.com/unknown/goclipse,Java,Unknown (Requires full git clone),638,288,40,2,True,Pass
-graphhopper,https://github.com/unknown/graphhopper,Java,Unknown (Requires full git clone),2034,1291,3630,2,True,Pass
-graylog2-server,https://github.com/unknown/graylog2-server,Java,Unknown (Requires full git clone),3037,2110,780,1,True,Pass
-hapi-fhir,https://github.com/unknown/hapi-fhir,Java,Unknown (Requires full git clone),803,613,2774,36,True,Pass
-HikariCP,https://github.com/unknown/HikariCP,Java,Unknown (Requires full git clone),495,327,183,2,True,Pass
-hivemall,https://github.com/unknown/hivemall,Java,Unknown (Requires full git clone),383,247,728,9,True,Pass
-Hydra,https://github.com/unknown/Hydra,Java,Unknown (Requires full git clone),353,215,735,2,True,Pass
-intellij-elixir,https://github.com/unknown/intellij-elixir,Java,Unknown (Requires full git clone),399,201,344,44,True,Pass
-jackson-core,https://github.com/unknown/jackson-core,Java,Unknown (Requires full git clone),511,441,506,4,True,Pass
-jackson-databind,https://github.com/unknown/jackson-databind,Java,Unknown (Requires full git clone),1196,1046,6112,4,True,Pass
-jade4j,https://github.com/unknown/jade4j,Java,Unknown (Requires full git clone),298,264,964,1,True,Pass
-java-design-patterns,https://github.com/unknown/java-design-patterns,Java,Unknown (Requires full git clone),1148,851,8438,2,True,Pass
-jcabi-aspects,https://github.com/unknown/jcabi-aspects,Java,Unknown (Requires full git clone),555,471,237,16,True,Pass
-jcabi-github,https://github.com/unknown/jcabi-github,Java,Unknown (Requires full git clone),910,694,2169,19,True,Pass
-jcabi-http,https://github.com/unknown/jcabi-http,Java,Unknown (Requires full git clone),523,401,276,9,True,Pass
-jedis,https://github.com/unknown/jedis,Java,Unknown (Requires full git clone),559,479,1868,7,True,Pass
-Jest,https://github.com/unknown/Jest,Java,Unknown (Requires full git clone),575,449,259,5,True,Pass
-jinjava,https://github.com/unknown/jinjava,Java,Unknown (Requires full git clone),307,271,1680,0,True,Pass
-jInstagram,https://github.com/unknown/jInstagram,Java,Unknown (Requires full git clone),257,237,222,0,True,Pass
-jmeter-plugins,https://github.com/unknown/jmeter-plugins,Java,Unknown (Requires full git clone),859,499,3248,10,True,Pass
-jmxtrans,https://github.com/unknown/jmxtrans,Java,Unknown (Requires full git clone),576,466,1018,1,True,Pass
-jOOQ,https://github.com/unknown/jOOQ,Java,Unknown (Requires full git clone),1397,1200,688,0,True,Pass
-jsonld-java,https://github.com/unknown/jsonld-java,Java,Unknown (Requires full git clone),370,227,1650,5,True,Pass
-JsonPath,https://github.com/unknown/JsonPath,Java,Unknown (Requires full git clone),343,286,210,1,True,Pass
-jsonschema2pojo,https://github.com/unknown/jsonschema2pojo,Java,Unknown (Requires full git clone),391,355,622,0,True,Pass
-jsprit,https://github.com/unknown/jsprit,Java,Unknown (Requires full git clone),251,216,4384,0,True,Pass
-jtwig,https://github.com/unknown/jtwig,Java,Unknown (Requires full git clone),268,264,249,0,True,Pass
-keywhiz,https://github.com/unknown/keywhiz,Java,Unknown (Requires full git clone),431,333,463,0,True,Pass
-lenskit,https://github.com/unknown/lenskit,Java,Unknown (Requires full git clone),1584,619,1414,0,True,Pass
-less4j,https://github.com/unknown/less4j,Java,Unknown (Requires full git clone),890,743,365,1,True,Pass
-LittleProxy,https://github.com/unknown/LittleProxy,Java,Unknown (Requires full git clone),437,338,97,11,True,Pass
-logback,https://github.com/unknown/logback,Java,Unknown (Requires full git clone),242,213,1039,30,True,Pass
-lorsource,https://github.com/unknown/lorsource,Java,Unknown (Requires full git clone),2107,1700,470,1,True,Pass
-metrics,https://github.com/unknown/metrics,Java,Unknown (Requires full git clone),506,433,816,4,True,Pass
-mybatis-3,https://github.com/unknown/mybatis-3,Java,Unknown (Requires full git clone),1762,613,6805,2,True,Pass
-nutz,https://github.com/unknown/nutz,Java,Unknown (Requires full git clone),1221,1124,16672,22,True,Pass
-okhttp,https://github.com/unknown/okhttp,Java,Unknown (Requires full git clone),1557,1518,2432,27,True,Pass
-Openfire,https://github.com/unknown/Openfire,Java,Unknown (Requires full git clone),923,831,99,0,True,Pass
-OpenGrok,https://github.com/unknown/OpenGrok,Java,Unknown (Requires full git clone),397,328,262,0,True,Pass
-openwayback,https://github.com/unknown/openwayback,Java,Unknown (Requires full git clone),360,245,286,0,True,Pass
-optiq,https://github.com/unknown/optiq,Java,Unknown (Requires full git clone),767,513,2458,6,True,Pass
-orbeon-forms,https://github.com/unknown/orbeon-forms,Java,Unknown (Requires full git clone),4648,2164,671,0,True,Pass
-owlapi,https://github.com/unknown/owlapi,Java,Unknown (Requires full git clone),412,291,8685,2,True,Pass
-p6spy,https://github.com/unknown/p6spy,Java,Unknown (Requires full git clone),459,389,258,18,True,Pass
-parceler,https://github.com/unknown/parceler,Java,Unknown (Requires full git clone),364,305,231,0,True,Pass
-pdfsam,https://github.com/unknown/pdfsam,Java,Unknown (Requires full git clone),584,404,395,16,True,Pass
-picasso,https://github.com/unknown/picasso,Java,Unknown (Requires full git clone),333,320,740,2,True,Pass
-pinpoint,https://github.com/unknown/pinpoint,Java,Unknown (Requires full git clone),1316,1258,1808,5,True,Pass
-playn,https://github.com/unknown/playn,Java,Unknown (Requires full git clone),775,304,492,6,True,Pass
-protostuff,https://github.com/unknown/protostuff,Java,Unknown (Requires full git clone),276,212,1393,0,True,Pass
-psi-probe,https://github.com/unknown/psi-probe,Java,Unknown (Requires full git clone),794,268,280,2,True,Pass
-pushy,https://github.com/unknown/pushy,Java,Unknown (Requires full git clone),561,462,324,0,True,Pass
-qulice,https://github.com/unknown/qulice,Java,Unknown (Requires full git clone),861,620,302,1,True,Pass
-rails,https://github.com/unknown/rails,Java,Unknown (Requires full git clone),17717,14115,59509,50,True,Pass
-redpen,https://github.com/unknown/redpen,Java,Unknown (Requires full git clone),651,544,798,1,True,Pass
-restheart,https://github.com/unknown/restheart,Java,Unknown (Requires full git clone),387,224,37,3,True,Pass
-retrofit,https://github.com/unknown/retrofit,Java,Unknown (Requires full git clone),955,875,216,0,True,Pass
-rewrite,https://github.com/unknown/rewrite,Java,Unknown (Requires full git clone),273,212,6213,50,True,Pass
-rexster,https://github.com/unknown/rexster,Java,Unknown (Requires full git clone),445,377,1032,0,True,Pass
-RoaringBitmap,https://github.com/unknown/RoaringBitmap,Java,Unknown (Requires full git clone),316,256,522,0,True,Pass
-rspec-core,https://github.com/unknown/rspec-core,Java,Unknown (Requires full git clone),3092,1864,10277,5,True,Pass
-rspec-expectations,https://github.com/unknown/rspec-expectations,Java,Unknown (Requires full git clone),1253,882,17088,13,True,Pass
-rspec-mocks,https://github.com/unknown/rspec-mocks,Java,Unknown (Requires full git clone),1601,1099,11850,0,True,Pass
-rultor,https://github.com/unknown/rultor,Java,Unknown (Requires full git clone),1618,1364,352,3,True,Pass
-rxjava-jdbc,https://github.com/unknown/rxjava-jdbc,Java,Unknown (Requires full git clone),216,209,1203,0,True,Pass
-selendroid,https://github.com/unknown/selendroid,Java,Unknown (Requires full git clone),647,543,57,11,True,Pass
-seyren,https://github.com/unknown/seyren,Java,Unknown (Requires full git clone),344,298,89,2,True,Pass
-sms-backup-plus,https://github.com/unknown/sms-backup-plus,Java,Unknown (Requires full git clone),446,261,160,0,True,Pass
-sonarqube,https://github.com/unknown/sonarqube,Java,Unknown (Requires full git clone),5615,3163,9580,5,True,Pass
-spark,https://github.com/unknown/spark,Java,Unknown (Requires full git clone),405,340,68,7,True,Pass
-spring-cloud-config,https://github.com/unknown/spring-cloud-config,Java,Unknown (Requires full git clone),452,332,114,2,True,Pass
-springside4,https://github.com/unknown/springside4,Java,Unknown (Requires full git clone),319,233,402,14,True,Pass
-stubby4j,https://github.com/unknown/stubby4j,Java,Unknown (Requires full git clone),1070,731,78,0,True,Pass
-titan,https://github.com/unknown/titan,Java,Unknown (Requires full git clone),383,241,1116,21,True,Pass
-traccar,https://github.com/unknown/traccar,Java,Unknown (Requires full git clone),1833,1726,132,0,True,Pass
-truth,https://github.com/unknown/truth,Java,Unknown (Requires full git clone),464,214,924,0,True,Pass
-twilio-java,https://github.com/unknown/twilio-java,Java,Unknown (Requires full git clone),352,257,83,3,True,Pass
-vraptor4,https://github.com/unknown/vraptor4,Java,Unknown (Requires full git clone),1915,1443,790,0,True,Pass
-wicket-bootstrap,https://github.com/unknown/wicket-bootstrap,Java,Unknown (Requires full git clone),823,623,366,28,True,Pass
-wire,https://github.com/unknown/wire,Java,Unknown (Requires full git clone),700,678,590,0,True,Pass
-zxing,https://github.com/unknown/zxing,Java,Unknown (Requires full git clone),2092,395,944,0,True,Pass
+project_identifier,actual_repository_url,repository_owner,repository_name,detected_primary_language,Java_status,project_age_at_CIBench_cutoff,total_CIBench_commit_rows,CIBench_test_builds_available,test_information_present,source_line_count_or_verified_size_evidence,E11_age_criterion,E11_commit_history_criterion,E11_test_history_criterion,eligible_for_E11,exclusion_reason,verification_source
+adamfisk_LittleProxy,https://github.com/adamfisk/LittleProxy,adamfisk,LittleProxy,PHP,FAIL,2010-12-21T03:50:16Z,437,338,True,7397,PASS,UNKNOWN,UNKNOWN,False,Failed Criteria (Age or Language),GitHub API (partial)
+apache_drill,https://github.com/apache/drill,apache,drill,Java,PASS,2012-09-05T07:00:26Z,557,263,True,71165,PASS,UNKNOWN,UNKNOWN,False,UNVERIFIED (Requires full git clone),GitHub API (partial)
+aws_aws-sdk-java,https://github.com/aws/aws-sdk-java,aws,aws-sdk-java,Java,PASS,2010-03-22T23:34:58Z,267,227,True,6876245,PASS,UNKNOWN,UNKNOWN,False,UNVERIFIED (Requires full git clone),GitHub API (partial)
+azagniotov_stubby4j,https://github.com/azagniotov/stubby4j,azagniotov,stubby4j,Java,PASS,2012-06-14T01:49:27Z,1070,731,True,27451,PASS,UNKNOWN,UNKNOWN,False,UNVERIFIED (Requires full git clone),GitHub API (partial)
+brettwooldridge_HikariCP,https://github.com/brettwooldridge/HikariCP,brettwooldridge,HikariCP,Java,PASS,2013-10-08T05:43:03Z,495,327,True,5061,PASS,UNKNOWN,UNKNOWN,False,UNVERIFIED (Requires full git clone),GitHub API (partial)
+caelum_vraptor4,https://github.com/caelum/vraptor4,caelum,vraptor4,Java,PASS,2013-05-02T20:22:14Z,1915,1443,True,14093,PASS,UNKNOWN,UNKNOWN,False,UNVERIFIED (Requires full git clone),GitHub API (partial)
+checkstyle_checkstyle,https://github.com/checkstyle/checkstyle,checkstyle,checkstyle,Java,PASS,2013-08-31T02:05:05Z,1684,1406,True,315722,PASS,UNKNOWN,UNKNOWN,False,UNVERIFIED (Requires full git clone),GitHub API (partial)
+CloudifySource_cloudify,https://github.com/CloudifySource/cloudify,CloudifySource,cloudify,Java,PASS,2012-01-26T12:49:39Z,7512,4810,True,141067,PASS,UNKNOWN,UNKNOWN,False,UNVERIFIED (Requires full git clone),GitHub API (partial)
+davidmoten_rxjava-jdbc,https://github.com/davidmoten/rxjava-jdbc,davidmoten,rxjava-jdbc,Java,PASS,2014-02-09T08:07:31Z,216,209,True,1285,PASS,UNKNOWN,UNKNOWN,False,UNVERIFIED (Requires full git clone),GitHub API (partial)
+dianping_cat,https://github.com/dianping/cat,dianping,cat,Java,PASS,2012-12-05T02:31:48Z,1235,779,True,114117,PASS,UNKNOWN,UNKNOWN,False,UNVERIFIED (Requires full git clone),GitHub API (partial)
+doanduyhai_Achilles,https://github.com/doanduyhai/Achilles,doanduyhai,Achilles,Java,PASS,2012-11-17T09:26:30Z,457,321,True,104794,PASS,UNKNOWN,UNKNOWN,False,UNVERIFIED (Requires full git clone),GitHub API (partial)
+dropwizard_dropwizard,https://github.com/dropwizard/dropwizard,dropwizard,dropwizard,Java,PASS,2011-01-19T19:52:29Z,1754,1336,True,114725,PASS,UNKNOWN,UNKNOWN,False,UNVERIFIED (Requires full git clone),GitHub API (partial)
+dropwizard_metrics,https://github.com/dropwizard/metrics,dropwizard,metrics,Java,PASS,2010-02-26T19:44:42Z,506,433,True,21682,PASS,UNKNOWN,UNKNOWN,False,UNVERIFIED (Requires full git clone),GitHub API (partial)
+DSpace_DSpace,https://github.com/DSpace/DSpace,DSpace,DSpace,Java,PASS,2012-03-16T21:44:52Z,2195,1630,True,192322,PASS,UNKNOWN,UNKNOWN,False,UNVERIFIED (Requires full git clone),GitHub API (partial)
+dynjs_dynjs,https://github.com/dynjs/dynjs,dynjs,dynjs,Java,PASS,2011-09-27T16:58:05Z,435,331,True,10346,PASS,UNKNOWN,UNKNOWN,False,UNVERIFIED (Requires full git clone),GitHub API (partial)
+FasterXML_jackson-core,https://github.com/FasterXML/jackson-core,FasterXML,jackson-core,Java,PASS,2011-12-23T02:00:51Z,511,441,True,28388,PASS,UNKNOWN,UNKNOWN,False,UNVERIFIED (Requires full git clone),GitHub API (partial)
+FasterXML_jackson-databind,https://github.com/FasterXML/jackson-databind,FasterXML,jackson-databind,Java,PASS,2011-12-23T07:17:41Z,1196,1046,True,89539,PASS,UNKNOWN,UNKNOWN,False,UNVERIFIED (Requires full git clone),GitHub API (partial)
+Findwise_Hydra,https://github.com/Findwise/Hydra,Findwise,Hydra,Java,PASS,2012-03-23T12:48:15Z,353,215,True,4763,PASS,UNKNOWN,UNKNOWN,False,UNVERIFIED (Requires full git clone),GitHub API (partial)
+geoserver_geoserver,https://github.com/geoserver/geoserver,geoserver,geoserver,Java,PASS,2011-11-10T19:56:06Z,2564,2183,True,643823,PASS,UNKNOWN,UNKNOWN,False,UNVERIFIED (Requires full git clone),GitHub API (partial)
+GlowstoneMC_Glowstone,https://github.com/GlowstoneMC/Glowstone,GlowstoneMC,Glowstone,Java,PASS,2015-04-05T22:30:55Z,709,227,True,15775,FAIL,UNKNOWN,UNKNOWN,False,Failed Criteria (Age or Language),GitHub API (partial)
+go-lang-plugin-org_go-lang-idea-plugin,https://github.com/go-lang-plugin-org/go-lang-idea-plugin,go-lang-plugin-org,go-lang-idea-plugin,Java,PASS,2010-08-29T08:20:01Z,1151,801,True,34753,PASS,UNKNOWN,UNKNOWN,False,UNVERIFIED (Requires full git clone),GitHub API (partial)
+GoClipse_goclipse,https://github.com/GoClipse/goclipse,GoClipse,goclipse,Java,PASS,2013-11-19T03:41:13Z,638,288,True,149074,PASS,UNKNOWN,UNKNOWN,False,UNVERIFIED (Requires full git clone),GitHub API (partial)
+GoogleCloudPlatform_DataflowJavaSDK,https://github.com/GoogleCloudPlatform/DataflowJavaSDK,GoogleCloudPlatform,DataflowJavaSDK,,FAIL,2014-12-03T19:20:21Z,1475,416,True,13530,PASS,UNKNOWN,UNKNOWN,False,Failed Criteria (Age or Language),GitHub API (partial)
+google_error-prone,https://github.com/google/error-prone,google,error-prone,Java,PASS,2014-08-21T23:26:50Z,750,220,True,176956,PASS,UNKNOWN,UNKNOWN,False,UNVERIFIED (Requires full git clone),GitHub API (partial)
+google_truth,https://github.com/google/truth,google,truth,Java,PASS,2011-06-22T18:55:12Z,464,214,True,43431,PASS,UNKNOWN,UNKNOWN,False,UNVERIFIED (Requires full git clone),GitHub API (partial)
+graphhopper_graphhopper,https://github.com/graphhopper/graphhopper,graphhopper,graphhopper,Java,PASS,2012-02-18T19:57:38Z,2034,1291,True,143299,PASS,UNKNOWN,UNKNOWN,False,UNVERIFIED (Requires full git clone),GitHub API (partial)
+Graylog2_graylog2-server,https://github.com/Graylog2/graylog2-server,Graylog2,graylog2-server,Java,PASS,2010-05-17T21:27:02Z,3037,2110,True,220603,PASS,UNKNOWN,UNKNOWN,False,UNVERIFIED (Requires full git clone),GitHub API (partial)
+HubSpot_jinjava,https://github.com/HubSpot/jinjava,HubSpot,jinjava,Java,PASS,2014-10-13T17:39:22Z,307,271,True,7206,PASS,UNKNOWN,UNKNOWN,False,UNVERIFIED (Requires full git clone),GitHub API (partial)
+igniterealtime_Openfire,https://github.com/igniterealtime/Openfire,igniterealtime,Openfire,Java,PASS,2014-04-07T09:12:33Z,923,831,True,888239,PASS,UNKNOWN,UNKNOWN,False,UNVERIFIED (Requires full git clone),GitHub API (partial)
+iipc_openwayback,https://github.com/iipc/openwayback,iipc,openwayback,Java,PASS,2012-04-12T17:53:44Z,360,245,True,52798,PASS,UNKNOWN,UNKNOWN,False,UNVERIFIED (Requires full git clone),GitHub API (partial)
+iluwatar_java-design-patterns,https://github.com/iluwatar/java-design-patterns,iluwatar,java-design-patterns,Java,PASS,2014-08-09T16:45:18Z,1148,851,True,48722,PASS,UNKNOWN,UNKNOWN,False,UNVERIFIED (Requires full git clone),GitHub API (partial)
+jamesagnew_hapi-fhir,https://github.com/jamesagnew/hapi-fhir,jamesagnew,hapi-fhir,Java,PASS,2025-02-03T21:38:58Z,803,613,True,425888,FAIL,UNKNOWN,UNKNOWN,False,Failed Criteria (Age or Language),GitHub API (partial)
+jayway_JsonPath,https://github.com/jayway/JsonPath,jayway,JsonPath,Java,PASS,2011-01-24T13:19:19Z,343,286,True,2479,PASS,UNKNOWN,UNKNOWN,False,UNVERIFIED (Requires full git clone),GitHub API (partial)
+jberkel_sms-backup-plus,https://github.com/jberkel/sms-backup-plus,jberkel,sms-backup-plus,Java,PASS,2010-01-05T13:49:00Z,446,261,True,16682,PASS,UNKNOWN,UNKNOWN,False,UNVERIFIED (Requires full git clone),GitHub API (partial)
+jcabi_jcabi-aspects,https://github.com/jcabi/jcabi-aspects,jcabi,jcabi-aspects,Java,PASS,2013-09-04T12:25:37Z,555,471,True,6116,PASS,UNKNOWN,UNKNOWN,False,UNVERIFIED (Requires full git clone),GitHub API (partial)
+jcabi_jcabi-github,https://github.com/jcabi/jcabi-github,jcabi,jcabi-github,Java,PASS,2013-11-07T13:23:16Z,910,694,True,46740,PASS,UNKNOWN,UNKNOWN,False,UNVERIFIED (Requires full git clone),GitHub API (partial)
+jcabi_jcabi-http,https://github.com/jcabi/jcabi-http,jcabi,jcabi-http,Java,PASS,2014-01-28T13:12:40Z,523,401,True,10154,PASS,UNKNOWN,UNKNOWN,False,UNVERIFIED (Requires full git clone),GitHub API (partial)
+jmxtrans_jmxtrans,https://github.com/jmxtrans/jmxtrans,jmxtrans,jmxtrans,Java,PASS,2011-12-07T17:24:36Z,576,466,True,70031,PASS,UNKNOWN,UNKNOWN,False,UNVERIFIED (Requires full git clone),GitHub API (partial)
+joelittlejohn_jsonschema2pojo,https://github.com/joelittlejohn/jsonschema2pojo,joelittlejohn,jsonschema2pojo,Java,PASS,2013-06-22T22:28:53Z,391,355,True,13728,PASS,UNKNOWN,UNKNOWN,False,UNVERIFIED (Requires full git clone),GitHub API (partial)
+johncarl81_parceler,https://github.com/johncarl81/parceler,johncarl81,parceler,Java,PASS,2013-07-03T02:53:01Z,364,305,True,1573,PASS,UNKNOWN,UNKNOWN,False,UNVERIFIED (Requires full git clone),GitHub API (partial)
+jOOQ_jOOQ,https://github.com/jOOQ/jOOQ,jOOQ,jOOQ,Java,PASS,2011-04-17T10:43:33Z,1397,1200,True,286395,PASS,UNKNOWN,UNKNOWN,False,UNVERIFIED (Requires full git clone),GitHub API (partial)
+jsonld-java_jsonld-java,https://github.com/jsonld-java/jsonld-java,jsonld-java,jsonld-java,Java,PASS,2011-12-15T16:04:37Z,370,227,True,3072,PASS,UNKNOWN,UNKNOWN,False,UNVERIFIED (Requires full git clone),GitHub API (partial)
+jsprit_jsprit,https://github.com/jsprit/jsprit,jsprit,jsprit,Java,PASS,2013-03-27T13:35:04Z,251,216,True,11344,PASS,UNKNOWN,UNKNOWN,False,UNVERIFIED (Requires full git clone),GitHub API (partial)
+jtwig_jtwig,https://github.com/jtwig/jtwig,jtwig,jtwig,,FAIL,2012-09-10T21:05:20Z,268,264,True,1912,PASS,UNKNOWN,UNKNOWN,False,Failed Criteria (Age or Language),GitHub API (partial)
+julianhyde_optiq,https://github.com/julianhyde/optiq,julianhyde,optiq,Java,PASS,2012-08-06T21:43:16Z,767,513,True,20430,PASS,UNKNOWN,UNKNOWN,False,UNVERIFIED (Requires full git clone),GitHub API (partial)
+KronicDeth_intellij-elixir,https://github.com/KronicDeth/intellij-elixir,KronicDeth,intellij-elixir,Unknown,UNKNOWN,Unknown,399,201,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+l0rdn1kk0n_wicket-bootstrap,https://github.com/l0rdn1kk0n/wicket-bootstrap,l0rdn1kk0n,wicket-bootstrap,Unknown,UNKNOWN,Unknown,823,623,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+lemire_RoaringBitmap,https://github.com/lemire/RoaringBitmap,lemire,RoaringBitmap,Unknown,UNKNOWN,Unknown,316,256,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+lenskit_lenskit,https://github.com/lenskit/lenskit,lenskit,lenskit,Unknown,UNKNOWN,Unknown,1584,619,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+maxcom_lorsource,https://github.com/maxcom/lorsource,maxcom,lorsource,Unknown,UNKNOWN,Unknown,2107,1700,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+mybatis_mybatis-3,https://github.com/mybatis/mybatis-3,mybatis,mybatis-3,Unknown,UNKNOWN,Unknown,1762,613,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+myui_hivemall,https://github.com/myui/hivemall,myui,hivemall,Unknown,UNKNOWN,Unknown,383,247,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+naver_pinpoint,https://github.com/naver/pinpoint,naver,pinpoint,Unknown,UNKNOWN,Unknown,1316,1258,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+neuland_jade4j,https://github.com/neuland/jade4j,neuland,jade4j,Unknown,UNKNOWN,Unknown,298,264,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+nutzam_nutz,https://github.com/nutzam/nutz,nutzam,nutz,Unknown,UNKNOWN,Unknown,1221,1124,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+ocpsoft_rewrite,https://github.com/ocpsoft/rewrite,ocpsoft,rewrite,Unknown,UNKNOWN,Unknown,273,212,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+OpenGrok_OpenGrok,https://github.com/OpenGrok/OpenGrok,OpenGrok,OpenGrok,Unknown,UNKNOWN,Unknown,397,328,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+orbeon_orbeon-forms,https://github.com/orbeon/orbeon-forms,orbeon,orbeon-forms,Unknown,UNKNOWN,Unknown,4648,2164,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+owlcs_owlapi,https://github.com/owlcs/owlapi,owlcs,owlapi,Unknown,UNKNOWN,Unknown,412,291,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+p6spy_p6spy,https://github.com/p6spy/p6spy,p6spy,p6spy,Unknown,UNKNOWN,Unknown,459,389,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+perwendel_spark,https://github.com/perwendel/spark,perwendel,spark,Unknown,UNKNOWN,Unknown,405,340,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+protostuff_protostuff,https://github.com/protostuff/protostuff,protostuff,protostuff,Unknown,UNKNOWN,Unknown,276,212,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+psi-probe_psi-probe,https://github.com/psi-probe/psi-probe,psi-probe,psi-probe,Unknown,UNKNOWN,Unknown,794,268,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+qos-ch_logback,https://github.com/qos-ch/logback,qos-ch,logback,Unknown,UNKNOWN,Unknown,242,213,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+rackerlabs_blueflood,https://github.com/rackerlabs/blueflood,rackerlabs,blueflood,Unknown,UNKNOWN,Unknown,1471,901,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+rails_rails,https://github.com/rails/rails,rails,rails,Unknown,UNKNOWN,Unknown,17717,14115,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+recruit-tech_redpen,https://github.com/recruit-tech/redpen,recruit-tech,redpen,Unknown,UNKNOWN,Unknown,651,544,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+relayrides_pushy,https://github.com/relayrides/pushy,relayrides,pushy,Unknown,UNKNOWN,Unknown,561,462,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+rspec_rspec-core,https://github.com/rspec/rspec-core,rspec,rspec-core,Unknown,UNKNOWN,Unknown,3092,1864,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+rspec_rspec-expectations,https://github.com/rspec/rspec-expectations,rspec,rspec-expectations,Unknown,UNKNOWN,Unknown,1253,882,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+rspec_rspec-mocks,https://github.com/rspec/rspec-mocks,rspec,rspec-mocks,Unknown,UNKNOWN,Unknown,1601,1099,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+sachin-handiekar_jInstagram,https://github.com/sachin-handiekar/jInstagram,sachin-handiekar,jInstagram,Unknown,UNKNOWN,Unknown,257,237,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+scobal_seyren,https://github.com/scobal/seyren,scobal,seyren,Unknown,UNKNOWN,Unknown,344,298,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+searchbox-io_Jest,https://github.com/searchbox-io/Jest,searchbox-io,Jest,Unknown,UNKNOWN,Unknown,575,449,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+selendroid_selendroid,https://github.com/selendroid/selendroid,selendroid,selendroid,Unknown,UNKNOWN,Unknown,647,543,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+simpligility_android-maven-plugin,https://github.com/simpligility/android-maven-plugin,simpligility,android-maven-plugin,Unknown,UNKNOWN,Unknown,557,482,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+SoftInstigate_restheart,https://github.com/SoftInstigate/restheart,SoftInstigate,restheart,Unknown,UNKNOWN,Unknown,387,224,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+SomMeri_less4j,https://github.com/SomMeri/less4j,SomMeri,less4j,Unknown,UNKNOWN,Unknown,890,743,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+SonarSource_sonarqube,https://github.com/SonarSource/sonarqube,SonarSource,sonarqube,Unknown,UNKNOWN,Unknown,5615,3163,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+spring-cloud_spring-cloud-config,https://github.com/spring-cloud/spring-cloud-config,spring-cloud,spring-cloud-config,Unknown,UNKNOWN,Unknown,452,332,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+springside_springside4,https://github.com/springside/springside4,springside,springside4,Unknown,UNKNOWN,Unknown,319,233,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+square_dagger,https://github.com/square/dagger,square,dagger,Unknown,UNKNOWN,Unknown,471,408,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+square_keywhiz,https://github.com/square/keywhiz,square,keywhiz,Unknown,UNKNOWN,Unknown,431,333,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+square_okhttp,https://github.com/square/okhttp,square,okhttp,Unknown,UNKNOWN,Unknown,1557,1518,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+square_picasso,https://github.com/square/picasso,square,picasso,Unknown,UNKNOWN,Unknown,333,320,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+square_retrofit,https://github.com/square/retrofit,square,retrofit,Unknown,UNKNOWN,Unknown,955,875,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+square_wire,https://github.com/square/wire,square,wire,Unknown,UNKNOWN,Unknown,700,678,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+tananaev_traccar,https://github.com/tananaev/traccar,tananaev,traccar,Unknown,UNKNOWN,Unknown,1833,1726,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+teamed_qulice,https://github.com/teamed/qulice,teamed,qulice,Unknown,UNKNOWN,Unknown,861,620,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+thinkaurelius_titan,https://github.com/thinkaurelius/titan,thinkaurelius,titan,Unknown,UNKNOWN,Unknown,383,241,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+threerings_playn,https://github.com/threerings/playn,threerings,playn,Unknown,UNKNOWN,Unknown,775,304,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+tinkerpop_blueprints,https://github.com/tinkerpop/blueprints,tinkerpop,blueprints,Unknown,UNKNOWN,Unknown,589,461,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+tinkerpop_rexster,https://github.com/tinkerpop/rexster,tinkerpop,rexster,Unknown,UNKNOWN,Unknown,445,377,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+torakiki_pdfsam,https://github.com/torakiki/pdfsam,torakiki,pdfsam,Unknown,UNKNOWN,Unknown,584,404,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+twilio_twilio-java,https://github.com/twilio/twilio-java,twilio,twilio-java,Unknown,UNKNOWN,Unknown,352,257,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+undera_jmeter-plugins,https://github.com/undera/jmeter-plugins,undera,jmeter-plugins,Unknown,UNKNOWN,Unknown,859,499,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+weld_core,https://github.com/weld/core,weld,core,Unknown,UNKNOWN,Unknown,2708,614,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+xetorthio_jedis,https://github.com/xetorthio/jedis,xetorthio,jedis,Unknown,UNKNOWN,Unknown,559,479,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+yegor256_rultor,https://github.com/yegor256/rultor,yegor256,rultor,Unknown,UNKNOWN,Unknown,1618,1364,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)
+zxing_zxing,https://github.com/zxing/zxing,zxing,zxing,Unknown,UNKNOWN,Unknown,2092,395,True,Unknown,UNKNOWN,UNKNOWN,UNKNOWN,False,Unverified Criteria,GitHub API (partial)

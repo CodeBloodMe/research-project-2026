@@ -19,7 +19,7 @@ History-based tabular ML-PTS models evaluated on the CI build histories of matur
 The study uses CIBench (Jin & Servant, 2021, DOI: 10.5281/zenodo.4682056). Descriptive dataset stats: 100 projects, 82,427 builds, 13,464 failing builds (before E11 filtering).
 
 ## 7. Observation Unit
-A `(commit d, test t)` pair representing a specific candidate test execution. Ground truth $y(d,t) = 1$ if the test actually failed.
+A `(CI Build Job j, test class t)` pair representing a specific candidate test execution. Ground truth $y(j,t) = 1$ if the test class actually failed in that job.
 
 ## 8. Treatment/Control
 * **Treatment**: `REF_MIXED` (commits containing at least one RefactoringMiner operation + non-refactoring production changes).
@@ -35,7 +35,7 @@ A reduced history-based LightGBM model derived from Machalica et al. (Option B),
 File/Path Identity, Code Churn, Historical Test Failure Rate, Historical Code-Test Co-occurrence, Common Path Tokens. (TF-IDF/CodeBERT are explicitly excluded).
 
 ## 12. Ground Truth
-The actual pass/fail test outcomes generated during the CIBench recorded CI build.
+The actual pass/fail test outcomes generated during the CIBench recorded CI build. Specifically, a failure outcome $y(j,t) = 1$ is defined empirically as `failed > 0` for the test class.
 
 ## 13. Outcomes
 * **Primary**: `FailureMissRate` (proportion of actual failing tests missed by the model, evaluated strictly among test instances where actual failure $y(d,t) = 1$).
@@ -61,8 +61,8 @@ Commit Size (churn), Temporal Window (project age), and Repository Culture. Cont
 ## 18. Temporal Protocol
 Strict boundaries: No information generated during or after commit $d$ may enter the historical feature vector $x(d,t)$.
 
-## 19. Flakiness Protocol
-Repeated builds use the outcome of the first run. Any tests known to be flaky in CIBench documentation are excluded from the candidate universe to minimize noise.
+## 19. Flakiness and Duplication Protocol
+Duplicate CI builds for the same Commit SHA are explicitly retained and modeled hierarchically (`Repository -> Commit SHA -> CI Build -> Test Class`) to account for environment/retry variation. Any tests known to be flaky in CIBench documentation are excluded from the candidate universe to minimize noise.
 
 ## 20. Calibration/Selection Policy
 Test selection operates via a fixed time-reduction budget or target historical recall selected exclusively on the validation set. The chosen rule is frozen globally prior to evaluation.
