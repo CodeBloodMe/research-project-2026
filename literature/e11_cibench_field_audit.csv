@@ -1,0 +1,9 @@
+field,required_for,status,found_in,notes
+project_name,Hierarchical Modeling,PASS,Directory Names,Included as directory and file prefixes.
+commit_hash,Git checking / RefactoringMiner,PASS,Abdalkareem19_git_result,Found in column 1 of project CSVs.
+build_id,Aggregation,PASS,File Names,Implicit via the line number (1-indexed) in the Abdalkareem19 CSVs.
+test_name,Test-level ML Example,PASS,test_info_logs,Found in column 2 of the test_info_logs CSVs.
+test_outcome,Ground truth Y,PASS,test_info_logs,Failed count found in column 5 (or passed/error columns).
+test_duration,TestTimeSaved Outcome,PASS,test_info_logs,Execution time found in column 8 of test_info_logs.
+changed_files,Feature X,PASS,Machalica19_git_result,Found as a JSON array in column 4 of the Machalica19 CSVs.
+timestamp,Temporal split,FAIL,Git Clone (Fallback),Not present in the dataset natively. Must be extracted from Git using commit_hash.
