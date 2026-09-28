@@ -1,0 +1,9 @@
+field,description,required_for,fallback_if_missing
+project_name,Identifier for the repository,Hierarchical Modeling,None (Fatal)
+commit_hash,Git SHA identifying the change,Git checking / RefactoringMiner,None (Fatal)
+build_id,Unique identifier for the CI run,Aggregation,Use commit_hash
+test_name,Fully qualified name of the test,Test-level ML Example,None (Fatal)
+test_outcome,Pass/Fail status of the test,Ground truth Y,None (Fatal)
+test_duration,Execution time of the test,TestTimeSaved Outcome,Use uniform proxy (Selection Rate)
+changed_files,List of files modified in the commit,Feature X,Extract directly from Git clone
+timestamp,Execution time of the build,Temporal split,Extract commit time from Git clone

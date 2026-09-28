@@ -1,0 +1,9 @@
+feature,definition,unit,historical_window,timestamp_rule,data_source,availability,leakage_risk,E11_status,deviation_from_Machalica
+File Identity,The fully qualified path of modified files,File,Current commit,Current commit time,Git/CIBench,High,Low,Included,"None (Core identifier)"
+File Cardinality,Number of files modified in the commit,Commit,Current commit,Current commit time,Git/CIBench,High,Low,Included,None
+Code Churn,Lines added and deleted,Commit/File,Current commit,Current commit time,Git/CIBench,High,Low,Included,None
+Test Historical Failure Rate,Probability test failed in recent history,Test,Past 30 days,Ends exactly before current commit,CIBench test outcomes,High,High,Included,None
+File-Test Co-occurrence,Number of times test failed when file was modified,File-Test pair,Past 90 days,Ends exactly before current commit,CIBench test outcomes,High,High,Included,None
+Minimal Dependency Distance,Graph distance between file and test,File-Test pair,Current commit,Current commit time,AST/Buck,Low,Low,Excluded,"Omitted (Option B - difficult to reliably build across 100 projects)"
+Common Path Tokens,String similarity between file path and test path,File-Test pair,Current commit,Current commit time,Git,High,Low,Included,None
+Distinct Authors,Number of distinct authors modifying the file historically,File,Past 90 days,Ends exactly before current commit,Git,High,Medium,Excluded,"Omitted (Option B - to restrict confounders and focus on purely structural exposure)"

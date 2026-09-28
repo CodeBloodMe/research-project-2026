@@ -1,0 +1,7 @@
+paper_system,year,venue,peer_reviewed,PTS_or_RTS,ML_based,refactoring_aware,CI_history,test_level,structural_change_level,representation_used,dataset,RQ_overlap,E11_overlap,difference,threat_to_novelty
+"Machalica et al., Predictive Test Selection",2019,ICSE-SEIP,YES,PTS,YES,NO,YES,YES,NO,File churn/history,Internal Facebook,LOW,MODERATE,"Defines the baseline PTS model, but does not examine structural refactoring.",LOW
+"Shi et al., Understanding and Improving Regression Test Selection",2019,ISSTA,YES,RTS,NO,NO,NO,NO,NO,Static Dependencies,Open Source,LOW,LOW,"Focuses on static dependencies, not ML.",LOW
+"Ekstazi (Gligoric et al.)",2015,ISSTA,YES,RTS,NO,NO,NO,YES,YES,Dynamic execution traces,Open Source,LOW,LOW,"Dynamic RTS. Handles some structural changes via checksums, but not ML-based.",LOW
+"STARTS (Legunsen et al.)",2016,ASE,YES,RTS,NO,NO,NO,YES,YES,Static dependencies,Open Source,LOW,LOW,"Static RTS. Resolves structural types, but not ML history-based.",LOW
+"Fazlalizadeh et al., Prioritizing Test Cases for Refactoring",2009,ICSME,YES,Test Prioritization,NO,YES,NO,YES,YES,Refactoring impact,Various,MODERATE,MODERATE,"Evaluates test prioritization upon refactoring, but uses static heuristics rather than CI history.",MODERATE
+"Wang et al., Re-evaluating ML-based Test Selection",2021,FSE,YES,PTS,YES,NO,YES,YES,NO,Static/Historical,Various,LOW,MODERATE,"Re-evaluates ML PTS but does not isolate refactoring exposure.",LOW

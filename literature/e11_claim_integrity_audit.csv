@@ -1,0 +1,12 @@
+claim,location,status,evidence,replacement_action
+"first empirical measurement of refactoring effect on PTS",multiple early gap documents,OBSOLETE,"A systematic novelty search shows intersection is rare but 'first' is difficult to prove exhaustively.",Replace with: "We contribute an empirical evaluation of..."
+"intersection remains unexplored",early gap documents,OBSOLETE,"Literature has evaluated RTS on refactoring; it's the ML-PTS intersection that is sparse.",Replace with: "The performance of history-based ML-PTS on refactoring commits is currently underexplored."
+"low novelty threat",novelty_audit.md,OBSOLETE,"Several static RTS approaches exist.",Replace with: "Novelty centers on the history-based ML formulation, not test selection broadly."
+"RR >= 3.0 or 3x risk",feasibility documents,OBSOLETE,"Arbitrary extrapolations without full dataset analysis.",Remove all claims of specific relative risk until empirically measured.
+"history drops to 0",e11_research_design.md,OBSOLETE,"Only true for direct exposure operations (e.g., file renames).",Replace with: "Directly exposed refactorings disrupt historical linkages."
+"pure refactoring is the primary treatment",early design docs,OBSOLETE,"Pure refactorings mathematically lack functional failures.",Replace with: "REF_MIXED is the primary treatment."
+"Machalica uses our exact baseline",design documents,OBSOLETE,"Machalica uses deep dependency graphs not fully replicable here.",Replace with: "We use a reduced history-based baseline derived from Machalica et al. (Option B)."
+"all refactoring-aware RTS is static",prior art docs,OBSOLETE,"Requires full exhaustive search to prove 'all'.",Replace with: "Existing refactoring-aware RTS solutions predominantly utilize static/dynamic analysis rather than history-based ML."
+"independent schema inspection (SQLite)",e11_cibench_schema_verification.md,OBSOLETE,"SQLite was not independently downloaded due to Zenodo blocking.",Replace with: "Schema properties are based on the published dataset documentation (Jin & Servant, 2021)."
+"1000+ repositories required",repository inclusion criteria,OBSOLETE,"Arbitrary heuristic.",Replace with: "Data power requirements will be formally calculated after a full descriptive census."
+"Gson pilot proves 99/99 mixed commits prevalence",e11_pilot_observations.csv,OBSOLETE,"Pilot was operational only; full AST diffs were not computed.",Replace with: "Single-project operational pilot. Mixed status unresolved."

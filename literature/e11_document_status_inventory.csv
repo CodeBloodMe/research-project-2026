@@ -1,0 +1,83 @@
+path,status,reason,authoritative_for_current_E11,contains_obsolete_claims,required_action
+literature/E11_FINAL_RESEARCH_DESIGN.md,ACTIVE,Master consolidated design document generated in Phase 14,YES,NO,None
+literature/E11_CURRENT_RESEARCH_STATE.md,ACTIVE,Pointer to authoritative states,YES,NO,None
+literature/e11_document_status_inventory.csv,ACTIVE,Inventory tracking,YES,NO,None
+literature/e11_claim_integrity_audit.csv,ACTIVE,Audit log,YES,NO,None
+literature/e11_prior_art_reaudit.md,ACTIVE,Master prior art analysis,YES,NO,None
+literature/e11_prior_art_matrix.csv,ACTIVE,Master prior art matrix,YES,NO,None
+literature/e11_novelty_claim.md,ACTIVE,Defensible novelty claim,YES,NO,None
+literature/e11_baseline_fidelity_audit.md,ACTIVE,Baseline documentation,YES,NO,None
+literature/e11_baseline_feature_spec.csv,ACTIVE,Baseline features,YES,NO,None
+literature/e11_observation_unit_spec.md,ACTIVE,Defines ML example,YES,NO,None
+literature/e11_outcome_estimands.md,ACTIVE,Defines outcomes,YES,NO,None
+literature/e11_refactoring_label_protocol.md,ACTIVE,Defines REF_ONLY vs REF_MIXED,YES,NO,None
+literature/e11_refactoring_pts_exposure_matrix.csv,ACTIVE,Direct vs indirect exposure,YES,NO,None
+literature/e11_rq_estimand_matrix.csv,ACTIVE,RQs and estimands,YES,NO,None
+literature/e11_identification_dag.md,ACTIVE,DAG and adjustment strategy,YES,NO,None
+literature/e11_temporal_leakage_protocol.md,ACTIVE,Temporal boundaries,YES,NO,None
+literature/e11_cibench_provenance.md,ACTIVE,CIBench factual verification,YES,NO,None
+literature/e11_cibench_required_fields.csv,ACTIVE,Fields needed for E11,YES,NO,None
+literature/e11_rq3_final_intervention_spec.md,ACTIVE,RQ3 intervention spec,YES,NO,None
+literature/e11_master_audit_checklist.csv,ACTIVE,Master completeness check,YES,NO,None
+literature/e11_research_design.md,SUPERSEDED,Replaced by E11_FINAL_RESEARCH_DESIGN.md,NO,YES,Keep as historical
+literature/e11_variables.md,SUPERSEDED,Replaced by final specs,NO,NO,Keep as historical
+literature/e11_rq_hypothesis_matrix.csv,SUPERSEDED,Replaced by e11_rq_estimand_matrix.csv,NO,YES,Keep as historical
+literature/e11_go_no_go.md,HISTORICAL,Past decision log,NO,NO,Keep as historical
+literature/e11_pilot_observations.csv,HISTORICAL,Pilot measurement log,NO,NO,Keep as historical
+literature/e11_design_change_log.md,HISTORICAL,Past log,NO,NO,Keep as historical
+literature/e11_refactoring_operation_taxonomy.md,SUPERSEDED,Replaced by exposure matrix,NO,YES,Keep as historical
+literature/e11_identity_representation_taxonomy.md,SUPERSEDED,Merged into exposure matrix and final design,NO,NO,Keep as historical
+literature/e11_baseline_representation_spec.md,SUPERSEDED,Merged into E11_FINAL_RESEARCH_DESIGN.md,NO,NO,Keep as historical
+literature/e11_mechanism_model.md,SUPERSEDED,Merged into E11_FINAL_RESEARCH_DESIGN.md,NO,NO,Keep as historical
+literature/e11_rq2_rq3_revision.md,HISTORICAL,Past decision log,NO,NO,Keep as historical
+literature/e11_rq1_alignment_audit.md,HISTORICAL,Past decision log,NO,NO,Keep as historical
+literature/e11_pilot_label_validation.md,HISTORICAL,Past decision log,NO,NO,Keep as historical
+literature/e11_design_consistency_audit.md,HISTORICAL,Past decision log,NO,NO,Keep as historical
+literature/e11_cibench_schema_verification.md,SUPERSEDED,Replaced by cibench_provenance,NO,NO,Keep as historical
+literature/e11_feasibility_reassessment.md,HISTORICAL,Feasibility evaluation,NO,YES,Keep as historical
+literature/e11_forensic_data_census.md,HISTORICAL,Feasibility evaluation,NO,YES,Keep as historical
+literature/e11_observation_unit_analysis.md,HISTORICAL,Feasibility evaluation,NO,NO,Keep as historical
+literature/e11_cibench_project_audit.csv,HISTORICAL,Feasibility evaluation,NO,NO,Keep as historical
+literature/e11_data_census.md,HISTORICAL,Feasibility evaluation,NO,YES,Keep as historical
+literature/e11_refactoring_census.csv,HISTORICAL,Feasibility evaluation,NO,YES,Keep as historical
+literature/e11_repository_eligibility.csv,HISTORICAL,Feasibility evaluation,NO,YES,Keep as historical
+literature/e11_failure_power.csv,HISTORICAL,Feasibility evaluation,NO,YES,Keep as historical
+literature/e11_data_risks.md,HISTORICAL,Feasibility evaluation,NO,NO,Keep as historical
+literature/e11_threats_to_validity.md,SUPERSEDED,Merged into final design,NO,NO,Keep as historical
+literature/e11_final_gap_statement.md,SUPERSEDED,Replaced by final design,NO,YES,Keep as historical
+literature/e11_final_sources.csv,HISTORICAL,Source log,NO,NO,Keep as historical
+literature/e11_final_validation.md,HISTORICAL,Validation log,NO,YES,Keep as historical
+literature/deep_prior_art_audit.md,HISTORICAL,Early exploration,NO,YES,Keep as historical
+literature/deep_prior_art_matrix.csv,HISTORICAL,Early exploration,NO,YES,Keep as historical
+literature/deep_prior_art_sources.csv,HISTORICAL,Early exploration,NO,NO,Keep as historical
+literature/closest_competitors.md,HISTORICAL,Early exploration,NO,YES,Keep as historical
+literature/competitor_failure_analysis.md,HISTORICAL,Early exploration,NO,YES,Keep as historical
+literature/gaps.md,IRRELEVANT,Unrelated to E11,NO,NO,Keep as historical
+literature/candidate_areas.csv,IRRELEVANT,Unrelated to E11,NO,NO,Keep as historical
+literature/candidate_research_questions.csv,IRRELEVANT,Unrelated to E11,NO,NO,Keep as historical
+literature/claims.csv,IRRELEVANT,Unrelated to E11,NO,NO,Keep as historical
+literature/empirical_candidates.csv,IRRELEVANT,Unrelated to E11,NO,NO,Keep as historical
+literature/empirical_evidence.csv,IRRELEVANT,Unrelated to E11,NO,NO,Keep as historical
+literature/empirical_gaps.md,IRRELEVANT,Unrelated to E11,NO,NO,Keep as historical
+literature/empirical_research_landscape.md,IRRELEVANT,Unrelated to E11,NO,NO,Keep as historical
+literature/final_candidate_audit.md,IRRELEVANT,Unrelated to E11,NO,NO,Keep as historical
+literature/final_candidate_matrix.csv,IRRELEVANT,Unrelated to E11,NO,NO,Keep as historical
+literature/final_candidate_sources.csv,IRRELEVANT,Unrelated to E11,NO,NO,Keep as historical
+literature/fresh_area_landscape.md,IRRELEVANT,Unrelated to E11,NO,NO,Keep as historical
+literature/fresh_candidates.csv,IRRELEVANT,Unrelated to E11,NO,NO,Keep as historical
+literature/fresh_candidate_evidence.csv,IRRELEVANT,Unrelated to E11,NO,NO,Keep as historical
+literature/fresh_gaps.md,IRRELEVANT,Unrelated to E11,NO,NO,Keep as historical
+literature/new_candidate_research_questions.csv,IRRELEVANT,Unrelated to E11,NO,NO,Keep as historical
+literature/novelty_audit.md,IRRELEVANT,Unrelated to E11,NO,NO,Keep as historical
+literature/novelty_evidence.csv,IRRELEVANT,Unrelated to E11,NO,NO,Keep as historical
+literature/novelty_matrix.csv,IRRELEVANT,Unrelated to E11,NO,NO,Keep as historical
+literature/papers.csv,IRRELEVANT,Unrelated to E11,NO,NO,Keep as historical
+literature/reformulated_candidates.csv,IRRELEVANT,Unrelated to E11,NO,NO,Keep as historical
+literature/reformulated_candidates.md,IRRELEVANT,Unrelated to E11,NO,NO,Keep as historical
+literature/reformulation_evidence.csv,IRRELEVANT,Unrelated to E11,NO,NO,Keep as historical
+literature/research_dossier.md,IRRELEVANT,Unrelated to E11,NO,NO,Keep as historical
+literature/research_evidence.csv,IRRELEVANT,Unrelated to E11,NO,NO,Keep as historical
+literature/research_landscape.md,IRRELEVANT,Unrelated to E11,NO,NO,Keep as historical
+literature/research_questions.md,IRRELEVANT,Unrelated to E11,NO,NO,Keep as historical
+literature/research_question_candidates.md,IRRELEVANT,Unrelated to E11,NO,NO,Keep as historical
+literature/second_order_gaps.csv,IRRELEVANT,Unrelated to E11,NO,NO,Keep as historical

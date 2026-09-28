@@ -1,0 +1,4 @@
+RQ,estimand,unit,treatment,control,outcome,covariates,time_ordering,analysis,falsification_standard
+RQ1,ATE (Average Treatment Effect),Test execution (nested in commit),REF_MIXED,NON_REF,FailureMissRate / E_d,Commit Size; Repository; Temporal Window; Prior Flakiness,Train < Build < Evaluate,Hierarchical Mixed-Effects Logistic Regression,"Effect <= 0 (mixed-effects coefficient statistically non-positive) with practical equivalence margin."
+RQ2,ATE of Exposure,Test execution (nested in commit),exposure_direct = 1,exposure_indirect = 1,FailureMissRate / Feature Shift,Commit Size; Repository,Train < Build < Evaluate,Hierarchical Mixed-Effects Regression,"Direct exposure effect <= Indirect exposure effect."
+RQ3,ATE of Intervention,Test execution (nested in commit),Identity-Aware PTS,Baseline PTS,FailureMissRate,Commit Size; Repository,Train < Build < Evaluate,Paired Mixed-Effects test on REF_MIXED commits,"Intervention coefficient >= 0 (no reduction in miss rate)."
