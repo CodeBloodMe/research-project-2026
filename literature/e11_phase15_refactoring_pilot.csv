@@ -1,0 +1,6 @@
+commit_hash,project,timestamp,refactoring_detected,refactoring_types,REF_ONLY_or_REF_MIXED,direct_exposure,indirect_exposure,failed_test_present,analysis_status/error
+99f2bafe1c0abb2791131dde5a702d3bb3ba28f3,okhttp.csv,1421068929,False,,NON_REF,False,False,False,ERROR_RM_FAILED
+9061a10ec596089deef6e83d6ecfb2c4e6a76171,okhttp.csv,1450756951,False,,NON_REF,False,False,False,ERROR_RM_FAILED
+68f1d74c49aa19114e743e13126d52be0f0a1660,okhttp.csv,1398122592,False,,NON_REF,False,False,False,ERROR_RM_FAILED
+8d51e740d77c6c80b9074162f8f0f6bd43bd37d3,okhttp.csv,1467471404,False,,NON_REF,False,False,False,ERROR_RM_FAILED
+bc342a42c84b660ef8296498af88780cc1c152bd,okhttp.csv,1356848596,False,,NON_REF,False,False,False,ERROR_RM_FAILED

@@ -16,6 +16,4 @@ The following factual statistics are drawn strictly from the published documenta
 *Note: These numbers describe the CIBench population before E11-specific filtering. They are published dataset statistics, not local measurements.*
 
 ## 3. Local Accessibility and Schema Verification
-Direct local acquisition of the raw `data_set.tar.gz` archive is currently blocked by Zenodo API/UUID throttling policies. Schema properties have been verified exclusively from the published dataset descriptions and the project's open-source metadata. No independent inspection of the raw SQLite tables is claimed until the archive is successfully downloaded and parsed in future phases.
-
-
+During Phase 15 and 15B, the raw `data_set.tar.gz` archive was successfully downloaded, extracted, and empirically audited. The dataset schema consists of linked CSV files across directories (e.g., `test_info_logs`, `Abdalkareem19_git_result`), not a raw SQLite database. We have fully inspected the test-level aggregation (Test Class level) and the exact population boundaries empirically.

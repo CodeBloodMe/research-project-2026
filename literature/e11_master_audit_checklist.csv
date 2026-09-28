@@ -16,9 +16,9 @@ issue_id,problem,fixed,evidence,document,remaining_risk,blocking
 15,temporal leakage,YES,Defined strict before-commit boundary,e11_temporal_leakage_protocol.md,None,NO
 16,flaky tests,YES,Protocol established to use first run/filter known flakes,E11_FINAL_RESEARCH_DESIGN.md,None,NO
 17,duplicate builds/jobs,YES,Protocol established to use first outcome,E11_FINAL_RESEARCH_DESIGN.md,None,NO
-18,CIBench provenance,YES,Separated published facts from measured facts; corrected title,e11_cibench_provenance.md,Download blocked by Zenodo API,YES
-19,sample eligibility,YES,Gate established for power calculation,E11_FINAL_RESEARCH_DESIGN.md,None,NO
-20,power,YES,Removed Gson pilot power claims,E11_FINAL_RESEARCH_DESIGN.md,Empirical measurement needed,YES
+18,CIBench provenance,YES,Downloaded via Zenodo API; empirically inspected schema and logged reproducibility,e11_phase15_reproducibility.md,None,NO
+19,sample eligibility,YES,Gate established; verified 100 projects in Phase 15B script,e11_actual_project_eligibility.csv,None,NO
+20,power,YES,Removed Gson pilot power claims and refactoring prevalence assumptions,e11_phase15_data_gate.md,Empirical dataset synthesis needed,YES
 21,RQ3 intervention,YES,Explicitly defined feature injection mechanism,e11_rq3_final_intervention_spec.md,None,NO
 22,operating point,YES,Defined training calibration policy on validation set,E11_FINAL_RESEARCH_DESIGN.md,None,NO
 23,statistical model,YES,Declared Hierarchical Mixed-Effects Logistic Regression,e11_statistical_analysis_plan.md,None,NO

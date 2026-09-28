@@ -1,24 +1,23 @@
-# Phase 15: Candidate Universe Protocol (E11)
+# Phase 15B: Candidate Universe Protocol (E11)
 
-## 1. Candidate Test Availability
-The empirical reality of mined continuous integration data (like CIBench) is that we often only observe tests that were *actually executed* during a build. Reconstructing the complete static test universe (all tests that *could* have been run) requires perfect compilation of historical snapshots, which is computationally prohibitive and prone to failure across 100 projects.
-
-## 2. Empirical Definition of the Universe
-Following the Phase 15 Empirical Data Gate inspection, the candidate universe is strictly defined by the raw CIBench Zenodo artifact. 
+## 1. Empirical Definition of the Universe
+Following the physical inspection of the CIBench artifacts, the candidate universe is strictly bounded by what is recorded in the `test_info_logs` and `Machalica19_git_result` directories.
 
 - **Total Commits**: 118,928 (listed across 100 projects in the `Abdalkareem19_git_result` directory).
-- **Observable Executions**: Only 82,272 of these commits have corresponding parsed test execution logs in the `test_info_logs` directory.
+- **Observable Executions**: 82,272 test logs corresponding to unique CI builds.
 
-We define the candidate universe for commit $d$, denoted $T_d$, exclusively as the set of tests that CIBench recorded as having been executed for that build within the 82,272 observable builds. Any commit without a corresponding test log file is strictly excluded from the study.
+## 2. Unit of Analysis and Observability
+- **Primary Unit ($t$)**: The data aggregates test executions at the **Test Class** level, NOT the individual test method level. Therefore, the unit of analysis $t$ is a Test Class (e.g., `libcore.net.http.HttpResponseCacheTest`).
+- **What is Observable**: We can observe the total number of test methods within a class, and the aggregate counts of how many failed, errored, or were explicitly skipped in a specific build. We can infer the number of passed tests.
+- **What is NOT Observable**: It is structurally impossible to identify which specific test method failed within a class. Furthermore, tests that were not compiled or explicitly reported by the CI runner as "skipped" are completely absent from the log and unobservable.
+- **Support for (commit, test)**: The primary unit (commit, test method) is **NOT** genuinely supported. The study must operate on the unit of (commit, test class).
 
-## 3. Implications for Estimands
-Because we cannot observe the full theoretical suite, we strictly restrict our claims. We do NOT claim:
-- "Full-suite test recall"
-- "Exact total suite selection rate"
+## 3. Candidate Universe ($T_d$)
+We define the candidate universe for a commit $d$, denoted $T_d$, exclusively as the set of **Test Classes** that CIBench recorded as having been executed for that build. 
+A Test Class is considered "executed" and part of $T_d$ if the sum of its passed, failed, and errored tests is greater than zero (i.e., Total - Skipped > 0).
 
-Instead, our estimands are formally defined as:
-- **Test-level miss rate**: "Missed-failure rate among observable failing test executions."
-- **Selection rate proxy**: "Proportion of observable executed tests selected by the model."
-
-## 4. Verification Step
-The raw CIBench dataset (CSV files, not SQLite) maps commit hashes to row numbers, and test execution outcomes are recorded per row number in `test_info_logs`. Tests marked as 'skipped' or 'N/A' in column 4 are excluded from the test-level evaluation universe unless their ground-truth pass/fail outcome is deterministically known from an adjacent build.
+## 4. Population and Estimand
+Because we cannot observe individual test methods or theoretical test classes, our estimands are formally defined at the Test Class level:
+- $m(d,t)$ refers to the event that the PTS model omits Test Class $t$ on commit $d$, given that the Test Class actually experienced $\ge 1$ failure/error in reality.
+- **Test-class-level miss rate**: "Missed-failure rate among observable failing test classes."
+- **Selection rate proxy**: "Proportion of observable executed test classes selected by the model."
