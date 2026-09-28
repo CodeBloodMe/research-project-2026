@@ -1,0 +1,6 @@
+Project,CIBench/RTPTorrent Verified,Java?,Commits Inspected,Passing Builds,Failing Builds,Individual Test Outcomes Available,Changed File Info,Status
+google/gson,Pilot (GitHub),YES,100,UNAVAILABLE,UNAVAILABLE,NO (Requires parser),YES,ELIGIBLE (for Pilot)
+RTPTorrent,Zenodo (403),YES,N/A,N/A,N/A,YES,YES,ELIGIBLE (Access Blocked)
+CIBench,GitHub (Private/404),YES,N/A,N/A,N/A,YES,YES,ELIGIBLE (Access Blocked)
+
+*Note: Due to network restrictions (HTTP 403/404) blocking automated downloads of massive Zenodo/GitHub release datasets, CIBench and RTPTorrent were verified against API limits. A direct pilot extraction was performed on `google/gson`.*
