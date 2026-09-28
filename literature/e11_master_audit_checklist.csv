@@ -27,3 +27,10 @@ issue_id,problem,fixed,evidence,document,remaining_risk,blocking
 26,test-level miss conditioned on failure,YES,Defined m(d;t) only where y=1,e11_outcome_analysis_spec.md,None,NO
 27,invalid RefactoringMiner historical sampling,YES,Invalidated 2026 commits and ran pilot on actual Abdalkareem19 historical SHAs,e11_phase15d_refactoring_pilot.csv,None,NO
 28,unresolved 155-build discrepancy,YES,Explicitly declared UNRESOLVED_FROM_AVAILABLE_ARTIFACTS and bounds dataset to 82272 physical logs,e11_cibench_build_count_reconciliation.md,None,NO
+29,population verification,NO,Phase 16 git history clone running,e11_actual_project_eligibility.csv,Background task completion needed,YES
+30,full CIBench synthesis,NO,Phase 16 synthesis script running on 82k logs,e11_build_test_class_raw.csv,Background task completion needed,YES
+31,historical Git linkage,NO,Phase 16 linkage script running,e11_git_linkage_full.csv,Background task completion needed,YES
+32,RM coverage,NO,Phase 16 pipeline script defined,e11_refactoring_raw.csv,Background task completion needed,YES
+33,REF_ONLY/REF_MIXED algorithm,YES,Mathematically codified the AST intersection logic,e11_ref_only_ref_mixed_algorithm.md,Implementation correctness in pipeline,NO
+34,test-class dataset construction,NO,Synthesis script running,e11_test_class_dataset.csv,Background task completion needed,YES
+35,hierarchy validation,YES,Analyzed repeat counts and specified downgrade fallback,e11_hierarchy_validation.md,None,NO
