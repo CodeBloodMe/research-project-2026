@@ -1,18 +1,41 @@
-# Research Project 2026
+# CS Research Project
 
-## Directory Structure
-- `literature/`: Literature review and related papers
-- `paper/`: Drafts and final version of the research paper
-- `experiments/`: Experimental setup and scripts
-- `data/`: Datasets used for the project
-- `results/`: Output data from experiments
-- `figures/`: Plots, graphs, and images
-- `reviews/`: Peer reviews and feedback
-- `tools/`: Utility scripts and tools
+## Project Status
 
-## Integrations (MCPs)
-- MCP 1 → Zotero
-- MCP 2 → Semantic Scholar
-- MCP 3 → OpenAlex
-- MCP 4 → Crossref
-- MCP 5 → GitHub
+Phase: Research Problem Discovery
+
+Status: Not yet defined
+
+## Research Objective
+
+Identify a technically meaningful and experimentally testable
+computer science research problem suitable for submission to an
+appropriate international conference.
+
+## Principles
+
+- Evidence-driven literature review
+- Reproducible experimentation
+- Version-controlled research code
+- Verified citations
+- Explicit novelty analysis
+- Skeptical peer-review simulation
+- Venue-specific compliance
+- Transparent AI assistance
+
+## Repository Structure
+
+```text
+ResearchLab/
+├── literature/
+├── paper/
+├── experiments/
+├── data/
+├── results/
+├── figures/
+├── reviews/
+├── tools/
+├── AGENT_RULES.md
+├── README.md
+├── .env.example
+└── .gitignore
