@@ -1,0 +1,7 @@
+Metric,Estimated Value,Actual Measured Value,Source/Notes
+A. Total commits,50000+,UNAVAILABLE,Requires aggregation of eligible RTPTorrent repos.
+B. Commits with detected refactoring,"~15-20%",UNAVAILABLE,Based on Silva et al. FSE 2016 refactoring prevalence studies.
+C. Candidate "pure refactoring" commits,"< 5%",UNAVAILABLE,Pure refactorings (no functional changes) are historically rare in continuous CI.
+D. Mixed refactoring + functional,"~15%",UNAVAILABLE,Most refactorings are interleaved with feature additions.
+E. Feature/non-refactoring commits,"~80%",UNAVAILABLE,Standard feature and bugfix commits.
+Estimated Precision of Filter,"~85%",UNAVAILABLE,Requires manual stratification and validation by 2 independent raters.

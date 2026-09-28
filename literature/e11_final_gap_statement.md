@@ -1,0 +1,5 @@
+# E11 Gap Statement
+
+Despite the widespread industrial adoption of Machine Learning for Predictive Test Selection (PTS) to reduce continuous integration costs, and the academic recognition that structural refactorings break deterministic Regression Test Selection (RTS) tools, the intersection of these two domains remains unexplored. Current literature either evaluates ML-PTS models in aggregate without stratifying by structural change types, or explores refactoring-aware testing exclusively through static dependency graphs. 
+
+Consequently, it is currently unknown to what extent identity-modifying refactorings (such as class renames and cross-module method moves) induce feature distribution shift in ML-PTS models, and whether this shift significantly increases the False Negative Rate (missed regressions) in real-world CI pipelines. Addressing this gap will characterize a critical failure mode in AI-driven software engineering and establish the necessity for refactoring-aware ML test selection.

@@ -1,0 +1,6 @@
+Metric,Estimated Value,Actual Measured Value,Source/Notes
+Total failing builds,"~10-15%",UNAVAILABLE,Based on average TravisTorrent build failure rates (Beller et al. 2017).
+Total failed test executions,"~2-5% of tests",UNAVAILABLE,Test failure prevalence is heavily imbalanced in CI datasets.
+Candidate refactorings with ANY actual failure,"< 0.1% of commits",UNAVAILABLE,The intersection of a rare event (pure refactoring) and a rare event (test failure).
+Candidate refactorings with NO failures,"> 99.9%",UNAVAILABLE,Most pure refactorings successfully preserve behavior and pass all tests.
+Sufficient failing-test power for test-level FNR?,NO,UNAVAILABLE,Power is highly likely insufficient due to the intersection of two sparse minority classes.

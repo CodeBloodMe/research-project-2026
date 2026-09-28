@@ -1,0 +1,7 @@
+area,subtopic,research_problem,recent_activity,available_datasets,available_baselines,evaluation_metrics,resource_requirement,potential_researchability,evidence,confidence
+IR/RAG,Adversarial Robustness,RAG vulnerability to poisoned docs,HIGH,"MS MARCO, HotpotQA","Standard RAG, GraphRAG","Faithfulness, EM",MEDIUM,HIGH,Multiple recent surveys cite security as unresolved,HIGH
+IR/RAG,Adaptive Retrieval,Latency vs Faithfulness trade-off,HIGH,"NaturalQuestions, TriviaQA","Self-RAG, Flare","F1, Latency, Cost",MEDIUM,HIGH,Identified in 'Comprehensive Survey of Architectures',HIGH
+SE,Evaluation Contamination,Benchmark leakage in LLMs,HIGH,"HumanEval, SWE-bench",Standard LLMs,"Pass@k, Data Overlap %",LOW,HIGH,Highlighted in ICSE-FoSE survey,HIGH
+SE,Agentic Resolution,Long-horizon codebase changes,HIGH,SWE-bench,"SWE-agent, Devin",Patch Resolution Rate,MEDIUM,MEDIUM,Agent-based systems still struggle with complex interdependencies,HIGH
+PEFT,Continual Learning,Catastrophic forgetting in PECFT,HIGH,GLUE,"LoRA, AdapterFusion",Accuracy across sequential tasks,MEDIUM,HIGH,Highlighted as major PECFT limitation,HIGH
+PEFT,Adversarial Robustness,PEFT vulnerability vs Full FT,MEDIUM,SuperGLUE,Standard LoRA,Attack Success Rate,MEDIUM,HIGH,Surveys point to lack of sufficient adversarial research,MEDIUM

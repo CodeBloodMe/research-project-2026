@@ -1,0 +1,13 @@
+candidate_id,prior_art_threats,verified_novel
+E01,"Some BBRv2/Cubic coexistence papers exist, but specific shallow-buffer edge switch focus with BBRv3 is rare.",TRUE
+E02,"Concept drift in standard ML is known, but silent recall collapse of fixed PQ codebooks without retraining is poorly documented.",TRUE
+E03,"Fuzzing memory allocators usually looks for safety bugs, not deterministic pathological fragmentation/OOM.",TRUE
+E04,"Adversarial ETA is studied, but testing extreme brittleness to trivial MTU/padding jitter on CICIDS2017 models is a highly specific empirical gap.",TRUE
+E05,"Serverless DB latency is known to be higher, but specific thundering-herd micro-burst page-cache invalidation curves are under-evaluated.",TRUE
+E06,"Popularity bias is known, but the specific interaction of Two-Tower initialization heuristics during high-velocity cold-start flooding is a distinct empirical measure.",TRUE
+E07,"Continual FL exists, but bimodal periodic flipping (oscillation without convergence) is rarely tested compared to static label skew.",TRUE
+E08,"Both ZeRO and Async checkpointing are studied individually; their overlapping PCIe bandwidth contention starvation is an untested hardware/software intersection.",TRUE
+E09,"Disparate impact of DP-SGD is somewhat known, but isolating the gradient clipping effect on *extreme* minority classes (<0.1%) recall collapse is highly specific.",TRUE
+E10,"While ALEX memory blowup under adversarial loads is studied, continuous boundary sequential inserts causing P99 latency spikes is a distinct measurement.",TRUE
+E11,"PTS is studied generally; evaluating FNR specifically partitioned by Refactoring vs Feature commits is a novel empirical benchmark.",TRUE
+E12,"CXL performance is active, but specific random-access graph workload penalty due to lack of prefetching on CXL is a strong architectural evaluation.",TRUE

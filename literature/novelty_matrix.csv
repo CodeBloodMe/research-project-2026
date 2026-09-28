@@ -1,0 +1,4 @@
+candidate_id,paper_id,problem_overlap,method_overlap,architecture_overlap,dataset_overlap,evaluation_overlap,contribution_overlap,theoretical_difference,experimental_difference,engineering_difference,key_difference,overlap_level,evidence,verification_status
+C01,RAG_DEF_1,HIGH,HIGH,MEDIUM,MEDIUM,MEDIUM,HIGH,NONE,LOW,LOW,NONE,HIGH,Web Search,UNVERIFIED
+C02,ARXIV_2508_14419,HIGH,NEAR_IDENTICAL,HIGH,HIGH,HIGH,HIGH,NONE,NONE,LOW,NONE,NEAR_IDENTICAL,Web Search,UNVERIFIED
+C03,ARXIV_C_LORA,HIGH,NEAR_IDENTICAL,HIGH,MEDIUM,HIGH,HIGH,NONE,NONE,LOW,NONE,NEAR_IDENTICAL,Web Search,UNVERIFIED

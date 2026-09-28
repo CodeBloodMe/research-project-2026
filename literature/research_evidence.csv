@@ -1,0 +1,4 @@
+Candidate_ID,Status,Closest_Paper,Threat_Level,Gap
+E02,CLOSED,"IVF-TQ: Calibration-Free Streaming Vector Search via a Codebook-Free Residual Layer (arXiv 2605.17415)",Fatal,"The exact phenomenon of streaming vector search degrading due to static codebooks without concept drift, and methods to bypass this using residual statistics, was published in May 2026."
+E05,WEAK QUESTION,"Gopher: A disaggregated DBMS (VLDB 2024), Neon (VLDB 2023)",High,"Disaggregated database tail latency and cold-fetch phenomena are highly saturated. Isolating buffer latch contention vs network RTT is primarily systems engineering profiling, not a novel database algorithm."
+E11,STRONG RESEARCH QUESTION,"Machalica et al. (ICSE 2019) on ML PTS; Silva et al. (TOSEM 2023) on Static Refactoring-Aware RTS",Low,"No prior peer-reviewed study has systematically evaluated ML-based PTS false negative rates stratified by AST refactoring categories using continuous open-source CI datasets."

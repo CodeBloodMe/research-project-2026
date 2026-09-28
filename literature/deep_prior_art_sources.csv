@@ -1,0 +1,11 @@
+candidate_id,paper_id,title,authors,venue,year,link
+F01,VeloANN,"VeloANN: Record-level buffer pools and predictive prefetching for DiskANN",Various,arXiv/DB,2025,N/A
+F02,SemanticSparsification,"Semantic-aware gradient sparsification for heterogeneous FL",Various,IJSRT/arXiv,2025,N/A
+F03,FaunaDB/Remora,"Remora: Deterministic execution for serverless; FaunaDB architecture",Various,USENIX/SIGMOD,2023-2025,N/A
+F04,NeuroSCA,"NeuroSCA: Neuro-Symbolic Constraint Abstraction for Smart Contract Fuzzing",Various,arXiv,2025,N/A
+F05,Obelix,"Obelix: Compiler-assisted selective ORAM for Intel SGX",Various,CCS/IEEE,2021-2024,N/A
+F06,MARec,"MARec: Metadata Alignment for cold-start Recommendation",Various,RecSys,2024,N/A
+F07,BiScale,"BiScale: Two-tier Phase-aware DVFS for LLM Serving",Various,arXiv/MLSys,2025-2026,N/A
+F08,P4-Bloom,"Single-pass Bloom filter implementations in P4/Lucid",Various,SIGCOMM/NSDI,2022-2025,N/A
+F09,cc-pipe,"cc-pipe: Predictive conflict graphs for strict consistency",Various,NSDI,2025,N/A
+F10,HugeCTR,"Merlin HugeCTR and Colossal-AI CachedEmbedding",NVIDIA/Colossal-AI,MLSys,2022-2025,N/A

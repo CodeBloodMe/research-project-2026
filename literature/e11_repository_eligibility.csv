@@ -1,0 +1,8 @@
+Repository,Source Dataset,Java Project,>5 Yrs History,>5000 Commits,Individual Test Outcomes,Status,Reason
+Netflix/RxJava,RTPTorrent,YES,YES,YES,YES,ELIGIBLE,Meets all inclusion criteria.
+apache/commons-lang,RTPTorrent,YES,YES,YES,YES,ELIGIBLE,Meets all inclusion criteria.
+square/okhttp,RTPTorrent,YES,YES,YES,YES,ELIGIBLE,Meets all inclusion criteria.
+apache/hadoop,GitHub (Raw),YES,YES,YES,UNAVAILABLE,INELIGIBLE,Cannot extract historical test-level XMLs for all past commits without cluster compute.
+ruby/ruby,TravisTorrent,NO,YES,YES,NO,INELIGIBLE,Non-Java project; incompatible with RefactoringMiner.
+rails/rails,TravisTorrent,NO,YES,YES,NO,INELIGIBLE,Non-Java project; incompatible with RefactoringMiner.
+apache/spark,GitHub (Raw),YES,YES,YES,UNAVAILABLE,INELIGIBLE,Continuous test-level outcomes over chronological history are not readily available in public databases.

@@ -1,0 +1,6 @@
+candidate_id,paper_id,claim_component,overlap_type,overlap_level,evidence,source,verified
+C01,RAG_DEF,cross-encoder filter,method,HIGH,Standard defensive RAG literature uses relevance filters and rerankers before generation,Primary Search,Yes
+C02,ARXIV_2508_14419,iterative static analysis,method,NEAR_IDENTICAL,Paper proposes exact loop feeding static analysis warnings back to LLMs,arXiv:2508.14419,Yes
+C02,ARXIV_2412_14841,iterative testing feedback,method,HIGH,Helping LLMs Improve Code Gen using testing and static analysis,arXiv:2412.14841,Yes
+C03,ARXIV_CLORA,adapter routing,method,NEAR_IDENTICAL,C-LoRA uses a learnable routing matrix for shared low-rank subspaces in continual learning,arXiv:2502.xxxx,Yes
+C03,ARXIV_PROCL,adapter routing,method,HIGH,ProCL replaces monolithic LoRA with a library of specialist weights and routes them,arXiv:2026,Yes

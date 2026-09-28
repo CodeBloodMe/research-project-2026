@@ -1,0 +1,11 @@
+candidate_id,evidence_type,competitor_paper,limitation_verified,immediate_anti_novelty_status
+F01,Literature Search,DiskANN (NeurIPS),SSD I/O latency blocks scalability,No direct ML-prefetching for DiskANN found in 2025/2026 search.
+F02,Literature Search,Federated Pruning (MDPI 2025),Client drift on heterogeneous devices,Standard pruning exists; semantic-aware pruning specifically for edge stragglers remains an open gap.
+F03,Literature Search,Beldi (NSDI),2PC overhead in serverless state,Calvin-style determinism for Serverless is theoretically proposed but empirically unverified in recent 2026 venues.
+F04,Literature Search,Driller / FuSS (NDSS),SMT solver timeout on complex branches,Neural SMT approximations exist in verification, but direct integration into hybrid fuzzing loops is novel.
+F05,Literature Search,HybCache / DR.SGX (CCS),Full ORAM overhead,Selective ORAM via dynamic taint tracking is a verified second-order gap.
+F06,Literature Search,PAM (arXiv 2411.11225),Streaming cold-start lag,Compositional metadata embeddings for zero-shot streaming remains open.
+F07,Literature Search,EcoSched (arXiv 2025),TTFT SLO violations under DVFS,Phase-aware (prefill vs decode) DVFS scheduling for energy is highly promising and orthogonal to throughput scaling.
+F08,Literature Search,P4 limitation surveys (2025),Recirculation halves throughput,Single-pass cascaded filters are a known theoretical structure but unapplied to Tofino-constrained flow state.
+F09,Literature Search,Geo-replication surveys,Consensus tail latency,Dynamic consistency escalation based on local dependency graphs is a measurable systems gap.
+F10,Literature Search,DLRM CPU Offloading,PCIe latency bottleneck,Zipfian HBM caching for DLRMs is highly practical and student-feasible to measure.
