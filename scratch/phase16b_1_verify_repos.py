@@ -109,10 +109,9 @@ def process_project(row):
     if os.path.exists(test_logs_dir):
         for csv_file in glob.glob(f"{test_logs_dir}/*.csv"):
             try:
-                df_test = pd.read_csv(csv_file, on_bad_lines='skip')
-                # Some files might not have total_tests column if schema is weird, but we expect it.
-                if 'total_tests' in df_test.columns:
-                    total = pd.to_numeric(df_test['total_tests'], errors='coerce').sum()
+                df_test = pd.read_csv(csv_file, header=None, on_bad_lines='skip')
+                if len(df_test.columns) >= 3:
+                    total = pd.to_numeric(df_test[2], errors='coerce').sum()
                     if total > max_tests:
                         max_tests = total
             except:
@@ -147,10 +146,23 @@ def process_project(row):
     return result
 
 def main():
-    df = pd.read_csv('literature/e11_actual_project_eligibility.csv')
+    base_dir = "scratch/data_set/Extended_TravisTorrent/test_info_logs"
+    projects = [d for d in os.listdir(base_dir) if os.path.isdir(os.path.join(base_dir, d))]
+    
+    rows = []
+    for p in projects:
+        owner, name = p.split('_', 1)
+        rows.append({
+            'project_identifier': p,
+            'actual_repository_url': f"https://github.com/{owner}/{name}",
+            'repository_owner': owner,
+            'repository_name': name
+        })
+    df = pd.DataFrame(rows)
+    
     os.makedirs('scratch/clones_bare', exist_ok=True)
     
-    print("Starting historical eligibility verification...")
+    print(f"Starting historical eligibility verification on {len(df)} projects...")
     results = []
     
     # We use ThreadPoolExecutor to speed up clone and git log

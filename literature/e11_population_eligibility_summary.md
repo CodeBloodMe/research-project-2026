@@ -1,0 +1,48 @@
+# Phase 16B: Population Eligibility Summary
+
+- **Total Checked**: 43
+- **Eligible**: 3
+- **Ineligible**: 40
+- **Unverified**: 0
+
+## Reasons for Exclusion
+- Commits at cutoff 952 < 5000: 1
+- Age at cutoff 1456 days < 5 years: 1
+- Commits at cutoff 822 < 5000: 1
+- Age at cutoff 1610 days < 5 years: 1
+- Age at cutoff 644 days < 5 years: 1
+- Max test count 182 < 1000: 1
+- Commits at cutoff 3173 < 5000: 1
+- Age at cutoff 752 days < 5 years: 1
+- Age at cutoff 924 days < 5 years: 1
+- Commits at cutoff 679 < 5000: 1
+- Commits at cutoff 1325 < 5000: 1
+- Age at cutoff 1498 days < 5 years: 1
+- Age at cutoff 969 days < 5 years: 1
+- Age at cutoff 915 days < 5 years: 1
+- Commits at cutoff 1143 < 5000: 1
+- Commits at cutoff 749 < 5000: 1
+- Age at cutoff 1106 days < 5 years: 1
+- Commits at cutoff 4963 < 5000: 1
+- Age at cutoff 1718 days < 5 years: 1
+- Age at cutoff 1811 days < 5 years: 1
+- Age at cutoff 625 days < 5 years: 1
+- Commits at cutoff 2782 < 5000: 1
+- Age at cutoff 1684 days < 5 years: 1
+- Commits at cutoff 796 < 5000: 1
+- Age at cutoff 1238 days < 5 years: 1
+- Age at cutoff 667 days < 5 years: 1
+- Age at cutoff 824 days < 5 years: 1
+- Commits at cutoff 4368 < 5000: 1
+- Age at cutoff 1028 days < 5 years: 1
+- Age at cutoff 933 days < 5 years: 1
+- Age at cutoff 1377 days < 5 years: 1
+- Age at cutoff 655 days < 5 years: 1
+- Commits at cutoff 3867 < 5000: 1
+- Commits at cutoff 2117 < 5000: 1
+- Commits at cutoff 2474 < 5000: 1
+- Age at cutoff 1711 days < 5 years: 1
+- Age at cutoff 1712 days < 5 years: 1
+- Age at cutoff 926 days < 5 years: 1
+- Age at cutoff 1691 days < 5 years: 1
+- Age at cutoff 797 days < 5 years: 1

@@ -105,50 +105,59 @@ def main():
             # Read test classes
             try:
                 # verify header format
-                df_test = pd.read_csv(csv_file, nrows=0)
-                required_cols = ['test_name', 'total_tests', 'failed', 'errors', 'skipped']
-                missing_cols = [c for c in required_cols if c not in df_test.columns]
-                
-                if missing_cols:
-                    parse_errors.append({"file": csv_file, "error": f"Missing headers: {missing_cols}"})
+                df_test = pd.read_csv(csv_file, header=None)
+                if len(df_test.columns) < 8:
+                    parse_errors.append({"file": csv_file, "project": proj, "cibench_row": cibench_row, "error_type": "Missing columns", "error_message": f"Expected 8 columns, found {len(df_test.columns)}"})
                     continue
                     
-                df_test = pd.read_csv(csv_file, on_bad_lines='skip')
-                for _, row_test in df_test.iterrows():
-                    test_class = str(row_test.get('test_name', 'UNKNOWN'))
-                    total = pd.to_numeric(row_test.get('total_tests', 0), errors='coerce')
-                    failed = pd.to_numeric(row_test.get('failed', 0), errors='coerce')
-                    errors = pd.to_numeric(row_test.get('errors', 0), errors='coerce')
-                    skipped = pd.to_numeric(row_test.get('skipped', 0), errors='coerce')
-                    duration = pd.to_numeric(row_test.get('duration_seconds', 0), errors='coerce')
-                    
-                    if pd.isna(total) or total == 0:
-                        continue
+                for idx, row_test in df_test.iterrows():
+                    try:
+                        test_class = str(row_test[1]) if pd.notna(row_test[1]) else 'UNKNOWN'
+                        total = pd.to_numeric(row_test[2], errors='coerce')
+                        failed = pd.to_numeric(row_test[4], errors='coerce')
+                        errors = pd.to_numeric(row_test[5], errors='coerce')
+                        skipped = pd.to_numeric(row_test[6], errors='coerce')
+                        duration = pd.to_numeric(row_test[7], errors='coerce')
                         
-                    passed = total - failed - errors - skipped
-                    failure_positive = 1 if failed > 0 else 0
-                    
-                    test_classes_data.append({
-                        "project": proj,
-                        "cibench_row": cibench_row,
-                        "commit_sha": sha,
-                        "ci_build_id": build_id_str,
-                        "timestamp": timestamp,
-                        "parent_sha": parent_sha,
-                        "duplicate_sha_group": sha, 
-                        "test_class": test_class,
-                        "total_tests": total,
-                        "failed": failed,
-                        "errors": errors,
-                        "skipped": skipped,
-                        "passed_inferred": passed,
-                        "failure_positive": failure_positive,
-                        "duration_seconds": duration,
-                        "changed_files": "UNKNOWN", # Could extract from git diff
-                        "changed_file_count": 0
-                    })
+                        if pd.isna(total) or total == 0:
+                            continue
+                            
+                        # Missing values -> 0
+                        failed = failed if pd.notna(failed) else 0
+                        errors = errors if pd.notna(errors) else 0
+                        skipped = skipped if pd.notna(skipped) else 0
+                        duration = duration if pd.notna(duration) else 0
+                            
+                        passed = total - failed - errors - skipped
+                        executed_tests = total - skipped
+                        if executed_tests <= 0:
+                            continue
+                            
+                        failure_positive = 1 if failed > 0 else 0
+                        
+                        test_classes_data.append({
+                            "project": proj,
+                            "cibench_row": cibench_row,
+                            "commit_sha": sha,
+                            "ci_build_id": build_id_str,
+                            "timestamp": timestamp,
+                            "parent_sha": parent_sha,
+                            "test_class": test_class,
+                            "total_tests": total,
+                            "failed": failed,
+                            "errors": errors,
+                            "skipped": skipped,
+                            "executed_tests": executed_tests,
+                            "failure_positive": failure_positive,
+                            "duration_seconds": duration,
+                            "changed_files": "UNKNOWN", 
+                            "changed_file_count": 0,
+                            "code_churn": 0
+                        })
+                    except Exception as row_e:
+                         parse_errors.append({"file": csv_file, "project": proj, "cibench_row": cibench_row, "error_type": "Row parsing error", "error_message": str(row_e)})
             except Exception as e:
-                parse_errors.append({"file": csv_file, "error": str(e)})
+                parse_errors.append({"file": csv_file, "project": proj, "cibench_row": cibench_row, "error_type": "File parsing error", "error_message": str(e)})
                 
     # write test classes
     df_tests = pd.DataFrame(test_classes_data)

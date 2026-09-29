@@ -8,11 +8,11 @@
 - **RefactoringMiner Pipeline**: `scratch/phase16b_3_run_refactoring.py` removes all sample limits, executes RefactoringMiner natively in parallel across all valid commits, and never conflates `ERROR_RM_FAILED` with `NON_REF`.
 - **REF_ONLY/REF_MIXED**: Codified strictly via spatial intersection of AST structural bounds against unified diff line boundaries.
 
-## DECISION: CONDITIONAL PASS
-The gate evaluates to a **CONDITIONAL PASS**.
+## DECISION: FAIL
+The gate evaluates to **FAIL — Background tasks physically incomplete**.
 
 **Reasoning**:
-The E11 synthesis pipeline now rigorously complies with every strict constraint and artifact schema required. However, because `git clone` of 100 repositories and running RefactoringMiner on ~118,000 commits requires several hours of compute, the raw files (`data/*.csv`) are not yet fully materialized.
+The E11 synthesis pipeline (eligibility, build synthesis, RM diff mapping) now rigorously complies with every strict constraint and artifact schema required (including headerless CSV parsing, precise unified diff overlap for REF_ONLY/MIXED, and accurate test-history accumulation). However, because `git clone --bare` of 100 repositories and running RefactoringMiner on ~118,000 commits requires several hours of compute, the raw files (`data/*.csv`) are not yet fully materialized on disk.
 
 **Mandatory Condition**:
-No ML model training, tuning, or RQ analysis may begin until the three background Python scripts successfully exit and the CSV artifacts are physically complete on disk. We do not use "pipeline exists" to claim a full PASS.
+The Python background tasks must physically finish and all `pending` values in the quality report must be replaced with empirical integers before this gate can PASS. Do NOT proceed to ML.
